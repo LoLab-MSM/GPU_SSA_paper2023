@@ -12,6 +12,16 @@ from pysb.logging import setup_logger
 import logging
 from pysb.bng import generate_equations
 import os
+import socket
+from pycuda.tools import  make_default_context
+import pycuda.driver as cuda
+computer_name = socket.gethostname()
+
+import os
+dev = os.environ.get("CUDA_DEVICE")
+if dev is None:
+    dev = cuda.Device(0)
+gpu_name = dev.name()
 
 # generate_equations(kinase_model)
 # print(len(kinase_model.reactions))
@@ -73,9 +83,10 @@ def run_model(model, t_end, n_timesteps):
     all_timing = []
     info = needed_info.copy()
     info['model_name'] = model.name
-
+    info['device_name'] = computer_name
     info['n_ts'] = n_timesteps
     info['end_time'] = t_end
+    info['gpu_name'] = gpu_name
 
     def _run(sim_name):
         local_only = []
@@ -96,8 +107,6 @@ def run_model(model, t_end, n_timesteps):
     _run('cutauleaping')
     _run('stochkit_eight_cpu_ssa')
     _run('stochkit_eight_cpu_tau')
-
-
 
     return all_timing
 

@@ -6,27 +6,21 @@ from pysb.examples.schlogl import model as scholgl_model
 from pysb.examples.michment import model as michment
 from pysb.examples.kinase_cascade import model as kinase_model
 import time
-import matplotlib.pyplot as plt
 import pandas as pd
 from pysb.logging import setup_logger
 import logging
-from pysb.bng import generate_equations
-import os
 import socket
-from pycuda.tools import  make_default_context
 import pycuda.driver as cuda
-computer_name = socket.gethostname()
-
 import os
+
+computer_name = socket.gethostname()
 dev = os.environ.get("CUDA_DEVICE")
 if dev is None:
     dev = cuda.Device(0)
-gpu_name = dev.name()
+    gpu_name = dev.name()
+else:
+    dev = 'K20c'
 
-# generate_equations(kinase_model)
-# print(len(kinase_model.reactions))
-# print(len(kinase_model.species))
-# quit()
 
 setup_logger(logging.INFO)
 cur_dir = os.path.dirname(__file__)
@@ -101,7 +95,9 @@ def run_model(model, t_end, n_timesteps):
         tmp_pd = pd.DataFrame(local_only)
         tmp_pd.to_csv(
             os.path.join(cur_dir, 'Timings',
-                         '{}_{}_timing.csv'.format(sim_name, model.name)))
+                         '{}_{}_{}_timing.csv'.format(computer_name,
+                                                      sim_name,
+                                                      model.name,)))
 
     _run('gpu_ssa')
     _run('cutauleaping')

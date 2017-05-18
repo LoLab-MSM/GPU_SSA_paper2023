@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,K20c,pysb.examples.michment,128,101,6.6252450943,stochkit_eight_cpu_tau
-1,puma,100,K20c,pysb.examples.michment,256,101,7.08086395264,stochkit_eight_cpu_tau
-2,puma,100,K20c,pysb.examples.michment,512,101,7.33078193665,stochkit_eight_cpu_tau
-3,puma,100,K20c,pysb.examples.michment,1024,101,7.9242708683,stochkit_eight_cpu_tau
-4,puma,100,K20c,pysb.examples.michment,2048,101,8.988519907,stochkit_eight_cpu_tau
-5,puma,100,K20c,pysb.examples.michment,4096,101,11.1010680199,stochkit_eight_cpu_tau
-6,puma,100,K20c,pysb.examples.michment,8192,101,15.7682788372,stochkit_eight_cpu_tau
-7,puma,100,K20c,pysb.examples.michment,16384,101,27.1373250484,stochkit_eight_cpu_tau
+0,puma,100,K20c,pysb.examples.michment,128,101,6.55421996117,stochkit_eight_cpu_tau
+1,puma,100,K20c,pysb.examples.michment,256,101,6.7903649807,stochkit_eight_cpu_tau
+2,puma,100,K20c,pysb.examples.michment,512,101,6.93276715279,stochkit_eight_cpu_tau
+3,puma,100,K20c,pysb.examples.michment,1024,101,7.56059098244,stochkit_eight_cpu_tau
+4,puma,100,K20c,pysb.examples.michment,2048,101,8.50705814362,stochkit_eight_cpu_tau
+5,puma,100,K20c,pysb.examples.michment,4096,101,10.5195190907,stochkit_eight_cpu_tau
+6,puma,100,K20c,pysb.examples.michment,8192,101,14.6464560032,stochkit_eight_cpu_tau
+7,puma,100,K20c,pysb.examples.michment,16384,101,22.7366149426,stochkit_eight_cpu_tau

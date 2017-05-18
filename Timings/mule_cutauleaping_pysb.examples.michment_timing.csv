@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,mule,100,gtx1080,pysb.examples.michment,128,101,3.67249202728,cutauleaping
-1,mule,100,gtx1080,pysb.examples.michment,256,101,3.34910488129,cutauleaping
-2,mule,100,gtx1080,pysb.examples.michment,512,101,3.42243504524,cutauleaping
-3,mule,100,gtx1080,pysb.examples.michment,1024,101,3.55078697205,cutauleaping
-4,mule,100,gtx1080,pysb.examples.michment,2048,101,3.85752391815,cutauleaping
-5,mule,100,gtx1080,pysb.examples.michment,4096,101,4.44757699966,cutauleaping
-6,mule,100,gtx1080,pysb.examples.michment,8192,101,5.53748106956,cutauleaping
-7,mule,100,gtx1080,pysb.examples.michment,16384,101,8.2186229229,cutauleaping
+0,mule,100,GeForce GTX 1080,pysb.examples.michment,128,101,3.31118607521,cutauleaping
+1,mule,100,GeForce GTX 1080,pysb.examples.michment,256,101,3.35062003136,cutauleaping
+2,mule,100,GeForce GTX 1080,pysb.examples.michment,512,101,3.43174695969,cutauleaping
+3,mule,100,GeForce GTX 1080,pysb.examples.michment,1024,101,3.58074498177,cutauleaping
+4,mule,100,GeForce GTX 1080,pysb.examples.michment,2048,101,3.87775993347,cutauleaping
+5,mule,100,GeForce GTX 1080,pysb.examples.michment,4096,101,4.47909092903,cutauleaping
+6,mule,100,GeForce GTX 1080,pysb.examples.michment,8192,101,5.61581897736,cutauleaping
+7,mule,100,GeForce GTX 1080,pysb.examples.michment,16384,101,8.37499785423,cutauleaping

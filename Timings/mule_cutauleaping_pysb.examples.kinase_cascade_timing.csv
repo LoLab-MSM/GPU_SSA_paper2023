@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,mule,100,gtx1080,pysb.examples.kinase_cascade,128,101,14.4700889587,cutauleaping
+1,mule,100,gtx1080,pysb.examples.kinase_cascade,256,101,14.8280549049,cutauleaping
+2,mule,100,gtx1080,pysb.examples.kinase_cascade,512,101,15.4565141201,cutauleaping
+3,mule,100,gtx1080,pysb.examples.kinase_cascade,1024,101,16.4221019745,cutauleaping
+4,mule,100,gtx1080,pysb.examples.kinase_cascade,2048,101,22.6583600044,cutauleaping
+5,mule,100,gtx1080,pysb.examples.kinase_cascade,4096,101,31.6913721561,cutauleaping
+6,mule,100,gtx1080,pysb.examples.kinase_cascade,8192,101,49.7989139557,cutauleaping
+7,mule,100,gtx1080,pysb.examples.kinase_cascade,16384,101,85.3637678623,cutauleaping

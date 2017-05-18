@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,puma,100,K20c,pysb.examples.schlogl,128,101,6.57144284248,stochkit_eight_cpu_ssa
+1,puma,100,K20c,pysb.examples.schlogl,256,101,6.9890267849,stochkit_eight_cpu_ssa
+2,puma,100,K20c,pysb.examples.schlogl,512,101,6.92266392708,stochkit_eight_cpu_ssa
+3,puma,100,K20c,pysb.examples.schlogl,1024,101,10.4468328953,stochkit_eight_cpu_ssa
+4,puma,100,K20c,pysb.examples.schlogl,2048,101,8.89855599403,stochkit_eight_cpu_ssa
+5,puma,100,K20c,pysb.examples.schlogl,4096,101,11.024312973,stochkit_eight_cpu_ssa
+6,puma,100,K20c,pysb.examples.schlogl,8192,101,16.8256471157,stochkit_eight_cpu_ssa
+7,puma,100,K20c,pysb.examples.schlogl,16384,101,26.4308230877,stochkit_eight_cpu_ssa

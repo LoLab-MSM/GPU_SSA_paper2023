@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,puma,100,K20c,pysb.examples.michment,128,101,0.656730175018,cutauleaping
+1,puma,100,K20c,pysb.examples.michment,256,101,0.675926923752,cutauleaping
+2,puma,100,K20c,pysb.examples.michment,512,101,0.802531003952,cutauleaping
+3,puma,100,K20c,pysb.examples.michment,1024,101,0.98365688324,cutauleaping
+4,puma,100,K20c,pysb.examples.michment,2048,101,1.32745599747,cutauleaping
+5,puma,100,K20c,pysb.examples.michment,4096,101,2.05921292305,cutauleaping
+6,puma,100,K20c,pysb.examples.michment,8192,101,3.47235894203,cutauleaping
+7,puma,100,K20c,pysb.examples.michment,16384,101,6.42488408089,cutauleaping

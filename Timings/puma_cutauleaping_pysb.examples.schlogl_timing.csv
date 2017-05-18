@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,K20c,pysb.examples.schlogl,128,101,16.7739388943,cutauleaping
-1,puma,100,K20c,pysb.examples.schlogl,256,101,22.3213510513,cutauleaping
-2,puma,100,K20c,pysb.examples.schlogl,512,101,25.9150879383,cutauleaping
-3,puma,100,K20c,pysb.examples.schlogl,1024,101,27.8126490116,cutauleaping
-4,puma,100,K20c,pysb.examples.schlogl,2048,101,28.718225956,cutauleaping
-5,puma,100,K20c,pysb.examples.schlogl,4096,101,29.7333810329,cutauleaping
-6,puma,100,K20c,pysb.examples.schlogl,8192,101,32.6251430511,cutauleaping
-7,puma,100,K20c,pysb.examples.schlogl,16384,101,37.9737319946,cutauleaping
+0,puma,100,K20c,pysb.examples.schlogl,128,101,16.728085041,cutauleaping
+1,puma,100,K20c,pysb.examples.schlogl,256,101,22.4440910816,cutauleaping
+2,puma,100,K20c,pysb.examples.schlogl,512,101,26.334387064,cutauleaping
+3,puma,100,K20c,pysb.examples.schlogl,1024,101,27.7902479172,cutauleaping
+4,puma,100,K20c,pysb.examples.schlogl,2048,101,28.7061779499,cutauleaping
+5,puma,100,K20c,pysb.examples.schlogl,4096,101,29.9134690762,cutauleaping
+6,puma,100,K20c,pysb.examples.schlogl,8192,101,32.6923849583,cutauleaping
+7,puma,100,K20c,pysb.examples.schlogl,16384,101,37.933013916,cutauleaping

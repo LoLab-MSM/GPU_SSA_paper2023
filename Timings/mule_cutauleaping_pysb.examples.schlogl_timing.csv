@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,mule,100,GeForce GTX 1080,pysb.examples.schlogl,128,101,3.80901694298,cutauleaping
+1,mule,100,GeForce GTX 1080,pysb.examples.schlogl,256,101,3.85828781128,cutauleaping
+2,mule,100,GeForce GTX 1080,pysb.examples.schlogl,512,101,3.90180921555,cutauleaping
+3,mule,100,GeForce GTX 1080,pysb.examples.schlogl,1024,101,4.06112980843,cutauleaping
+4,mule,100,GeForce GTX 1080,pysb.examples.schlogl,2048,101,4.348954916,cutauleaping
+5,mule,100,GeForce GTX 1080,pysb.examples.schlogl,4096,101,4.98397803307,cutauleaping
+6,mule,100,GeForce GTX 1080,pysb.examples.schlogl,8192,101,6.33046197891,cutauleaping
+7,mule,100,GeForce GTX 1080,pysb.examples.schlogl,16384,101,9.20021009445,cutauleaping

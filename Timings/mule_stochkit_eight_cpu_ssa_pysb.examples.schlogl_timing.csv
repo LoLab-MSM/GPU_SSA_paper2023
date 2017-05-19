@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,mule,100,GeForce GTX 1080,pysb.examples.schlogl,128,101,5.27236890793,stochkit_eight_cpu_ssa
+1,mule,100,GeForce GTX 1080,pysb.examples.schlogl,256,101,5.42357492447,stochkit_eight_cpu_ssa
+2,mule,100,GeForce GTX 1080,pysb.examples.schlogl,512,101,5.85678792,stochkit_eight_cpu_ssa
+3,mule,100,GeForce GTX 1080,pysb.examples.schlogl,1024,101,6.60996103287,stochkit_eight_cpu_ssa
+4,mule,100,GeForce GTX 1080,pysb.examples.schlogl,2048,101,8.12436318398,stochkit_eight_cpu_ssa
+5,mule,100,GeForce GTX 1080,pysb.examples.schlogl,4096,101,11.2431681156,stochkit_eight_cpu_ssa
+6,mule,100,GeForce GTX 1080,pysb.examples.schlogl,8192,101,17.4683690071,stochkit_eight_cpu_ssa
+7,mule,100,GeForce GTX 1080,pysb.examples.schlogl,16384,101,29.9492650032,stochkit_eight_cpu_ssa

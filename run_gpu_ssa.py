@@ -5,6 +5,8 @@ import numpy as np
 from pysb.examples.schlogl import model as scholgl_model
 from pysb.examples.michment import model as michment
 from pysb.examples.kinase_cascade import model as kinase_model
+from pysb.examples.earm_1_0 import model as earm_1
+from pysb.examples.ras_camp_pka import model as ras_model
 import time
 import pandas as pd
 from pysb.logging import setup_logger
@@ -20,6 +22,7 @@ if dev is None:
     gpu_name = dev.name()
 else:
     dev = 'K20c'
+    gpu_name = 'K20c'
 
 
 setup_logger(logging.INFO)
@@ -38,7 +41,7 @@ def run(n_sim, model, tspan, simulator='gpu_ssa'):
     if simulator == 'gpu_ssa':
         sim = GPUSimulator(model, tspan=tspan)
         st = time.time()
-        sim.run_one_step(tspan, number_sim=n_sim)
+        sim.run_one_step(tspan, number_sim=n_sim, threads=128)
         # sim.run(tspan, number_sim=n_sim)
         end_time = time.time()
         return end_time - st
@@ -92,6 +95,7 @@ def run_model(model, t_end, n_timesteps):
             local_info['sim_time'] = t_taken
             all_timing.append(local_info)
             local_only.append(local_info)
+        # return
         tmp_pd = pd.DataFrame(local_only)
         tmp_pd.to_csv(
             os.path.join(cur_dir, 'Timings',
@@ -99,10 +103,10 @@ def run_model(model, t_end, n_timesteps):
                                                       sim_name,
                                                       model.name,)))
 
-    _run('gpu_ssa')
     _run('cutauleaping')
-    _run('stochkit_eight_cpu_ssa')
-    _run('stochkit_eight_cpu_tau')
+    _run('gpu_ssa')
+    #_run('stochkit_eight_cpu_ssa')
+    #_run('stochkit_eight_cpu_tau')
 
     return all_timing
 
@@ -110,12 +114,7 @@ def run_model(model, t_end, n_timesteps):
 if __name__ == "__main__":
     # """
 
-    t1 = run_model(scholgl_model, 100, 101, )
-    t = run_model(michment, 100, 101)
-    t2 = run_model(kinase_model, 100, 101)
-    df_1 = pd.DataFrame(t)
-    df_2 = pd.DataFrame(t1)
-    df_3 = pd.DataFrame(t2)
-    df = pd.concat([df_1, df_2, df_3])
-
-    df.to_csv('output.csv')
+    #t1 = run_model(scholgl_model, 100, 101, )
+    #t = run_model(michment, 100, 101)
+    #t2 = run_model(kinase_model, 100, 101)
+    run_model(earm_1, 20000, 101)

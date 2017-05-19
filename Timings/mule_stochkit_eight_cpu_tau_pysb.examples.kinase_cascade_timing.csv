@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,128,101,12.4771728516,stochkit_eight_cpu_tau
+1,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,256,101,19.3161480427,stochkit_eight_cpu_tau
+2,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,512,101,33.6564269066,stochkit_eight_cpu_tau
+3,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,1024,101,61.3877389431,stochkit_eight_cpu_tau
+4,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,2048,101,116.069761992,stochkit_eight_cpu_tau
+5,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,4096,101,227.559109926,stochkit_eight_cpu_tau
+6,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,8192,101,442.696604967,stochkit_eight_cpu_tau
+7,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,16384,101,889.630844116,stochkit_eight_cpu_tau

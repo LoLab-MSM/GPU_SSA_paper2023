@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,K20c,pysb.examples.kinase_cascade,128,101,55.5049009323,gpu_ssa
-1,puma,100,K20c,pysb.examples.kinase_cascade,256,101,55.5172719955,gpu_ssa
-2,puma,100,K20c,pysb.examples.kinase_cascade,512,101,55.5658061504,gpu_ssa
-3,puma,100,K20c,pysb.examples.kinase_cascade,1024,101,55.6134970188,gpu_ssa
-4,puma,100,K20c,pysb.examples.kinase_cascade,2048,101,55.7444081306,gpu_ssa
-5,puma,100,K20c,pysb.examples.kinase_cascade,4096,101,54.2870559692,gpu_ssa
-6,puma,100,K20c,pysb.examples.kinase_cascade,8192,101,111.101142883,gpu_ssa
-7,puma,100,K20c,pysb.examples.kinase_cascade,16384,101,166.709568024,gpu_ssa
+0,puma,100,K20c,pysb.examples.kinase_cascade,128,101,55.4672448635,gpu_ssa
+1,puma,100,K20c,pysb.examples.kinase_cascade,256,101,55.5176851749,gpu_ssa
+2,puma,100,K20c,pysb.examples.kinase_cascade,512,101,55.5346109867,gpu_ssa
+3,puma,100,K20c,pysb.examples.kinase_cascade,1024,101,55.6004500389,gpu_ssa
+4,puma,100,K20c,pysb.examples.kinase_cascade,2048,101,55.7164599895,gpu_ssa
+5,puma,100,K20c,pysb.examples.kinase_cascade,4096,101,54.2504310608,gpu_ssa
+6,puma,100,K20c,pysb.examples.kinase_cascade,8192,101,111.175374985,gpu_ssa
+7,puma,100,K20c,pysb.examples.kinase_cascade,16384,101,166.781710148,gpu_ssa

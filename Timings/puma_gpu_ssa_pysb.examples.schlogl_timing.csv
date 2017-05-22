@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,K20c,pysb.examples.schlogl,128,101,0.277611017227,gpu_ssa
-1,puma,100,K20c,pysb.examples.schlogl,256,101,1.30823802948,gpu_ssa
-2,puma,100,K20c,pysb.examples.schlogl,512,101,1.63981199265,gpu_ssa
-3,puma,100,K20c,pysb.examples.schlogl,1024,101,0.296760082245,gpu_ssa
-4,puma,100,K20c,pysb.examples.schlogl,2048,101,1.22240614891,gpu_ssa
-5,puma,100,K20c,pysb.examples.schlogl,4096,101,1.22172188759,gpu_ssa
-6,puma,100,K20c,pysb.examples.schlogl,8192,101,2.17877411842,gpu_ssa
-7,puma,100,K20c,pysb.examples.schlogl,16384,101,2.87652111053,gpu_ssa
+0,puma,100,K20c,pysb.examples.schlogl,128,101,0.291024923325,gpu_ssa
+1,puma,100,K20c,pysb.examples.schlogl,256,101,0.282731056213,gpu_ssa
+2,puma,100,K20c,pysb.examples.schlogl,512,101,0.305558204651,gpu_ssa
+3,puma,100,K20c,pysb.examples.schlogl,1024,101,1.09596991539,gpu_ssa
+4,puma,100,K20c,pysb.examples.schlogl,2048,101,1.45921301842,gpu_ssa
+5,puma,100,K20c,pysb.examples.schlogl,4096,101,1.86397194862,gpu_ssa
+6,puma,100,K20c,pysb.examples.schlogl,8192,101,2.09608697891,gpu_ssa
+7,puma,100,K20c,pysb.examples.schlogl,16384,101,4.07671308517,gpu_ssa

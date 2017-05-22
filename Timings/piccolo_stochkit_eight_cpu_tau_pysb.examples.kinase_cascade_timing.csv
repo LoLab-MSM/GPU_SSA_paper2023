@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,128,101,11.9869139194,stochkit_eight_cpu_tau
+1,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,256,101,18.8135719299,stochkit_eight_cpu_tau
+2,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,512,101,32.7155029774,stochkit_eight_cpu_tau
+3,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,1024,101,59.6202881336,stochkit_eight_cpu_tau
+4,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,2048,101,115.087651014,stochkit_eight_cpu_tau
+5,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,4096,101,224.621914148,stochkit_eight_cpu_tau
+6,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,8192,101,448.512873888,stochkit_eight_cpu_tau
+7,piccolo,100,GeForce GTX 1060,pysb.examples.kinase_cascade,16384,101,887.201357126,stochkit_eight_cpu_tau

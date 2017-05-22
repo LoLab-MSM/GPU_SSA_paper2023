@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,128,101,5.35992193222,stochkit_eight_cpu_ssa
+1,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,256,101,5.2018020153,stochkit_eight_cpu_ssa
+2,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,512,101,5.73485898972,stochkit_eight_cpu_ssa
+3,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,1024,101,6.57361793518,stochkit_eight_cpu_ssa
+4,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,2048,101,8.67927503586,stochkit_eight_cpu_ssa
+5,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,4096,101,12.0878400803,stochkit_eight_cpu_ssa
+6,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,8192,101,19.326362133,stochkit_eight_cpu_ssa
+7,piccolo,100,GeForce GTX 1060,pysb.examples.schlogl,16384,101,33.7819628716,stochkit_eight_cpu_ssa

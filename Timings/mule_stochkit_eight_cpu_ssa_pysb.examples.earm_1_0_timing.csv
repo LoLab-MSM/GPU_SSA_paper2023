@@ -1,0 +1,2 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,128,101,150.864466906,stochkit_eight_cpu_ssa

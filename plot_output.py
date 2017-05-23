@@ -129,6 +129,6 @@ def print_speedups():
 
 
 if __name__ == "__main__":
-    # plot_per_gpu()
-    print_speedups()
+    plot_per_gpu()
+    # print_speedups()
     # plot_per_model()

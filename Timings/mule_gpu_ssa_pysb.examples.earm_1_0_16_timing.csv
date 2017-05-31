@@ -1,0 +1,2 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,threads
+0,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,65536,101,32020.6067929,gpu_ssa,16

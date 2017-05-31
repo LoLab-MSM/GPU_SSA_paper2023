@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,threads
+0,mule,100,GeForce GTX 1080,pysb.examples.michment,128,101,0.0167770385742,gpu_ssa,64
+1,mule,100,GeForce GTX 1080,pysb.examples.michment,256,101,0.0259990692139,gpu_ssa,64
+2,mule,100,GeForce GTX 1080,pysb.examples.michment,512,101,0.0437428951263,gpu_ssa,64
+3,mule,100,GeForce GTX 1080,pysb.examples.michment,1024,101,0.0923418998718,gpu_ssa,64
+4,mule,100,GeForce GTX 1080,pysb.examples.michment,2048,101,0.152653932571,gpu_ssa,64
+5,mule,100,GeForce GTX 1080,pysb.examples.michment,4096,101,0.295529127121,gpu_ssa,64
+6,mule,100,GeForce GTX 1080,pysb.examples.michment,8192,101,0.629462003708,gpu_ssa,64
+7,mule,100,GeForce GTX 1080,pysb.examples.michment,16384,101,1.24728488922,gpu_ssa,64

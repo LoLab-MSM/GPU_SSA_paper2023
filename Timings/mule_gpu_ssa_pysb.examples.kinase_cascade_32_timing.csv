@@ -1,0 +1,2 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,threads
+0,mule,100,GeForce GTX 1080,pysb.examples.kinase_cascade,8192,101,66.4242999554,gpu_ssa,32

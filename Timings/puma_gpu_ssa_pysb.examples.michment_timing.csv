@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,K20c,pysb.examples.michment,128,101,0.155423879623,gpu_ssa
-1,puma,100,K20c,pysb.examples.michment,256,101,0.142570018768,gpu_ssa
-2,puma,100,K20c,pysb.examples.michment,512,101,0.169106006622,gpu_ssa
-3,puma,100,K20c,pysb.examples.michment,1024,101,0.228913068771,gpu_ssa
-4,puma,100,K20c,pysb.examples.michment,2048,101,0.351718902588,gpu_ssa
-5,puma,100,K20c,pysb.examples.michment,4096,101,0.56195306778,gpu_ssa
-6,puma,100,K20c,pysb.examples.michment,8192,101,1.0030670166,gpu_ssa
-7,puma,100,K20c,pysb.examples.michment,16384,101,1.95354485512,gpu_ssa
+0,puma,100,Tesla K20c,pysb.examples.michment,128,101,2.51524496078,gpu_ssa
+1,puma,100,Tesla K20c,pysb.examples.michment,256,101,0.14177107811,gpu_ssa
+2,puma,100,Tesla K20c,pysb.examples.michment,512,101,0.170957803726,gpu_ssa
+3,puma,100,Tesla K20c,pysb.examples.michment,1024,101,0.237332820892,gpu_ssa
+4,puma,100,Tesla K20c,pysb.examples.michment,2048,101,0.379817008972,gpu_ssa
+5,puma,100,Tesla K20c,pysb.examples.michment,4096,101,0.639127016068,gpu_ssa
+6,puma,100,Tesla K20c,pysb.examples.michment,8192,101,1.04015207291,gpu_ssa
+7,puma,100,Tesla K20c,pysb.examples.michment,16384,101,2.06100583076,gpu_ssa

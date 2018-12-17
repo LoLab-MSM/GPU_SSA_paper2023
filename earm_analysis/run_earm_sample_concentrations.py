@@ -1,3 +1,6 @@
+import os
+
+os.environ['CUDA_DEVICE'] = "1"
 import logging
 
 import matplotlib.pyplot as plt
@@ -9,6 +12,7 @@ from pysb.simulator.gpu_ssa import GPUSimulator
 from pysb.simulator.scipyode import ScipyOdeSimulator
 from pysb.simulator.stochkit import StochKitSimulator
 
+
 setup_logger(logging.INFO)
 
 # options for observables
@@ -17,18 +21,20 @@ obs = ['cSmac_total', 'tBid_total', 'CPARP_total',
 
 name = 'cSmac_total'
 # name = 'tBid_total'
-tspan = np.linspace(0, 500, 201)
+tspan = np.linspace(0, 20000, 201)
 
 
 def run_model(ic1=None, factor1=1.0, ic2=None, factor2=1.0,
               n_sim=5000, simulator='gpu_ssa',
               precision=np.float64):
+
     if ic1 is not None:
         ic1_default_value = earm_model.parameters[ic1].value
         earm_model.parameters[ic1].value = ic1_default_value * factor1
+
     if ic2 is not None:
         ic2_default_value = earm_model.parameters[ic2].value
-        earm_model.parameters[ic1].value = ic2_default_value * factor2
+        earm_model.parameters[ic2].value = ic2_default_value * factor2
 
     if simulator == 'gpu_ssa':
         sim = GPUSimulator(earm_model, tspan=tspan, verbose=True,
@@ -67,15 +73,19 @@ def plot(tspan, traj, obs, save_name, title=None):
 
     result = np.array(traj.observables)[obs]
     x = np.array([tr[:] for tr in result]).T
-    plt.plot(tspan, x, '0.5', lw=2, alpha=0.25)  # individual trajectories
-    plt.plot(tspan, x.mean(axis=1), 'b', lw=3, label='mean')
-    plt.plot(tspan, x.max(axis=1), 'b--', lw=2, label="min/max")
-    plt.plot(tspan, x.min(axis=1), 'b--', lw=2)
+
+    time_in_hours = tspan / 60. / 60.
+    plt.plot(time_in_hours, x, '0.5', lw=2,
+             alpha=0.25)  # individual trajectories
+    plt.plot(time_in_hours, x.mean(axis=1), 'b', lw=3, label='mean')
+    plt.plot(time_in_hours, x.max(axis=1), 'b--', lw=2, label="min/max")
+    plt.plot(time_in_hours, x.min(axis=1), 'b--', lw=2)
 
     sol = ScipyOdeSimulator(earm_model, tspan)
     traj = sol.run()
 
-    plt.plot(tspan, np.array(traj.observables)[obs], c='red', label='ode')
+    plt.plot(time_in_hours, np.array(traj.observables)[obs], c='red',
+             label='ode')
 
     plt.legend(loc=0)
 
@@ -89,8 +99,8 @@ if __name__ == "__main__":
 
     # number of simulations
 
-    n_sim = 5000
-    run_model(n_sim=100, simulator='gpu_ssa')
+    n_sim = 2 ** 8
+    run_model(n_sim=n_sim, simulator='gpu_ssa')
     quit()
     # does single parameter scan for all initial conditions
     for each in earm_model.initial_conditions:

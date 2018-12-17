@@ -1,18 +1,17 @@
-from pysb.simulator.cutauleaping import CuTauLeapingSimulator
-from pysb.simulator.stochkit import StochKitSimulator
-from pysb.simulator.gpu_ssa import GPUSimulator
-import numpy as np
-from pysb.examples.schlogl import model as scholgl_model
-from pysb.examples.michment import model as michment
-from pysb.simulator.scipyode import ScipyOdeSimulator
-from pysb.examples.kinase_cascade import model as kinase_model
-from pysb.examples.earm_1_0 import model as earm_model
-from pysb.examples.ras_camp_pka import model as ras_model
-import time
-import matplotlib.pyplot as plt
-import pandas as pd
-from pysb.logging import setup_logger
 import logging
+
+# from pysb.examples.ras_camp_pka import model as ras_model
+import matplotlib.pyplot as plt
+import numpy as np
+
+from pysb.examples.earm_1_3 import model as earm_model
+from pysb.examples.kinase_cascade import model as kinase_model
+from pysb.examples.schlogl import model as scholgl_model
+from pysb.logging import setup_logger
+from pysb.simulator.cutauleaping import CuTauLeapingSimulator
+from pysb.simulator.gpu_ssa import GPUSimulator
+from pysb.simulator.scipyode import ScipyOdeSimulator
+from pysb.simulator.stochkit import StochKitSimulator
 
 setup_logger(logging.INFO)
 
@@ -25,7 +24,8 @@ needed_info = dict(model_name=None,
                    )
 
 
-def run_model(model, tspan, n_sim=1000, simulator='gpu_ssa', precision=np.float32):
+def run_model(model, tspan, n_sim=1000, simulator='gpu_ssa',
+              precision=np.float64):
 
     if simulator == 'gpu_ssa':
         sim = GPUSimulator(model, tspan=tspan, verbose=True, precision=precision)
@@ -65,15 +65,15 @@ if __name__ == "__main__":
 
     if opt == 'earm':
         sol = ScipyOdeSimulator(earm_model)
-        tspan = np.linspace(0, 20000, 101)
+        tspan = np.linspace(0, 8000, 101)
         name = 'cSmac_total'
         # name = 'tBid_total'
         traj = sol.run(tspan=tspan)
         plt.figure(0)
         plt.plot(tspan, traj.observables[name], '--o', color='black', label='ode-lsoda')
-
-        traj = run_model(earm_model, tspan, 500, simulator='gpu_ssa')
-        # traj1 = run_model(earm_model, tspan, 50, simulator='gpu_ssa', precision=np.float64)
+        # traj = run_model(earm_model, tspan, 500, simulator='gpu_ssa')
+        traj = run_model(earm_model, tspan, 50, simulator='gpu_ssa',
+                         precision=np.float64)
         # traj2 = run_model(earm_model, tspan, 500, simulator='cutauleaping')
 
     if opt =='ras':

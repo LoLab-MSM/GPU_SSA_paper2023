@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,buu,100,RTX2080,pysb.examples.kinase_cascade,256,101,12.844807863235474,gpu_ssa,13.95933198928833
+1,buu,100,RTX2080,pysb.examples.kinase_cascade,512,101,12.804225206375122,gpu_ssa,12.963029146194458
+2,buu,100,RTX2080,pysb.examples.kinase_cascade,1024,101,12.812459945678711,gpu_ssa,13.024471998214722
+3,buu,100,RTX2080,pysb.examples.kinase_cascade,2048,101,16.134266138076782,gpu_ssa,16.425173044204712
+4,buu,100,RTX2080,pysb.examples.kinase_cascade,4096,101,21.742658853530884,gpu_ssa,22.196108102798462
+5,buu,100,RTX2080,pysb.examples.kinase_cascade,8192,101,42.83607506752014,gpu_ssa,43.66713500022888
+6,buu,100,RTX2080,pysb.examples.kinase_cascade,16384,101,85.97995805740356,gpu_ssa,87.46495699882507
+7,buu,100,RTX2080,pysb.examples.kinase_cascade,32768,101,171.9767611026764,gpu_ssa,174.82475090026855
+8,buu,100,RTX2080,pysb.examples.kinase_cascade,65536,101,336.86561012268066,gpu_ssa,342.48198413848877
+9,buu,100,RTX2080,pysb.examples.kinase_cascade,131072,101,659.1170601844788,gpu_ssa,670.2602849006653

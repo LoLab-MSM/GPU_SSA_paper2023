@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
+0,buu,20000,RTX2080,pysb.examples.ras_camp_pka,128,101,163.4795961380005,gpu_ssa
+1,buu,20000,RTX2080,pysb.examples.ras_camp_pka,256,101,163.459046125412,gpu_ssa
+2,buu,20000,RTX2080,pysb.examples.ras_camp_pka,512,101,163.4409260749817,gpu_ssa
+3,buu,20000,RTX2080,pysb.examples.ras_camp_pka,1024,101,164.87557077407837,gpu_ssa
+4,buu,20000,RTX2080,pysb.examples.ras_camp_pka,2048,101,178.6859359741211,gpu_ssa
+5,buu,20000,RTX2080,pysb.examples.ras_camp_pka,4096,101,212.66351890563965,gpu_ssa
+6,buu,20000,RTX2080,pysb.examples.ras_camp_pka,8192,101,372.0084218978882,gpu_ssa
+7,buu,20000,RTX2080,pysb.examples.ras_camp_pka,16384,101,743.2037668228149,gpu_ssa

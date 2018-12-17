@@ -1,7 +1,7 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 import os
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 all_df = []
 
@@ -14,13 +14,16 @@ print(df['model_name'].unique())
 print(df['gpu_name'].unique())
 print(df['simulator'].unique())
 df.loc[df['gpu_name'] == 'gtx1080', 'gpu_name'] = 'GeForce GTX 1080'
-df.loc[df['gpu_name'] == 'K20c', 'gpu_name'] = 'Tesla K20c'
+df.loc[df['gpu_name'] == 'RTX2080', 'gpu_name'] = 'RTX2080'
+df = df.loc[df.gpu_name != 'Tesla K20c']
 # df = df[df['device_name'] == 'puma']
 df = df.sort_values(['model_name', 'simulator'], ascending=True)
 
 
 
 df = df[df['n_sim'] > 2 ** 7]
+
+# df['sim_time'] = df['sim_time']*8.
 print(df.dtypes)
 
 
@@ -62,7 +65,8 @@ def plot_per_model():
 def plot_per_gpu():
     plt.figure(figsize=(16, 12))
     counter = 1
-    df_storage = df.sort_values(['model_name','simulator', 'n_sim'], ascending=False)
+    df_storage = df.sort_values(['model_name', 'simulator', 'n_sim'],
+                                ascending=False)
     for m, (model, df_local) in enumerate(
             df_storage.groupby('model_name', sort=False)):
         y_max = df_local['sim_time'].max()
@@ -109,23 +113,31 @@ def plot_per_gpu():
                 plt.setp(ax.get_yticklabels(), fontsize=18)
             counter += 1
 
-    labels = ['cpu SSA', 'gpu SSA','gpu tauleaping', 'cpu tauleaping']
+    labels = ['cpu SSA', 'gpu SSA', 'gpu tauleaping', 'cpu tauleaping']
     leg = plt.legend(bbox_to_anchor=(1.75, 2.50), labels=labels, ncol=1,
                      fontsize=18)
     plt.tight_layout()
     plt.savefig('compare_gpu.png', bbox_extra_artists=(leg,),
                 bbox_inches='tight')
+    # plt.savefig('compare_gpu.eps', bbox_extra_artists=(leg,), bbox_inches='tight')
     # plt.show()
     plt.close()
+
 
 def print_speedups():
     local_data = df[df['gpu_name'] == 'GeForce GTX 1080']
     for n, (model_name, data) in enumerate(local_data.groupby('model_name')):
         cpu_time = data[data['simulator'] == 'stochkit_eight_cpu_ssa']['sim_time']
         gpu_time = data[data['simulator'] == 'gpu_ssa']['sim_time']
+        tau_leaping = data[data['simulator'] == 'stochkit_eight_cpu_tau'][
+            'sim_time']
+        gpu_tau_leaping = data[data['simulator'] == 'cutauleaping']['sim_time']
         increase = (cpu_time-gpu_time)/cpu_time * 100
-        print(model_name)
-        print(increase.max())
+        increase_tau = (tau_leaping - gpu_tau_leaping) / tau_leaping * 100
+        print(cpu_time / gpu_time)
+        # print(model_name)
+        # print(increase.max())
+        # print(increase_tau.max())
 
 
 if __name__ == "__main__":

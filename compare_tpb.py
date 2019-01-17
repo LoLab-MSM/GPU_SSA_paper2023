@@ -2,7 +2,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+"""
 
+Code to look how changing threads per block affects run times.
+
+Results: Use 32 threads per block!
+
+
+"""
 df = pd.read_csv('Timings/rtx2080_tpb_times.csv',
                  names=['n_sim', 'tpb', 'block', 'time'], delimiter=' ')
 

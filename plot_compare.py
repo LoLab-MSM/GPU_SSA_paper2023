@@ -1,59 +1,92 @@
-import os
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from data import gather_data
 
-all_df = []
-
-for i in os.listdir('Timings'):
-    all_df.append(pd.read_csv('Timings/' + i, index_col=0))
-
-df = pd.concat(all_df)
-print(df['device_name'].unique())
-print(df['model_name'].unique())
-print(df['gpu_name'].unique())
-print(df['simulator'].unique())
+df = gather_data()
 
 df.loc[df['gpu_name'] == 'gtx1080', 'gpu_name'] = 'GTX1080'
 df.loc[df['gpu_name'] == 'GeForce GTX 1080', 'gpu_name'] = 'GTX1080'
-# df = df[df['n_sim'] > 2 ** 7]
 
 
-# df = df.loc[df.gpu_name != 'Tesla K20c']
-# df = df[df['device_name'] == 'buu']
+def print_opts(d):
+    print(d['device_name'].unique())
+    print(d['model_name'].unique())
+    print(d['gpu_name'].unique())
+    print(d['simulator'].unique())
 
-# df = df.loc[df.simulator == 'gpu_ssa']
-# df = df.loc[df.model_name.isin(['pysb.examples.schlogl', 'pysb.examples.michment'])].copy()
-# df = df.loc[df.device_name.isin(['mule', 'piccolo', 'puma'])].copy()
-# df = df.loc[df.simulator.isin(['gpu_ssa', 'cutauleaping', 'stochkit_eight_cpu_ssa', 'stochkit_eight_cpu_tau'])].copy()
-#
-# g = sns.catplot(
-#     x="n_sim", y="sim_time", hue="simulator", col="model_name",  row='device_name',
-#     kind="point", data=df, sharey=False
-# )
-# plt.show()
-# plt.savefig('compare_gpu_to_bng.png', dpi=300, bbox_inches='tight')
-# quit()
-# plt.close()
-df = df[df['device_name'] == 'buu']
-df = df.loc[df.model_name.isin(
-    ['pysb.examples.schlogl', 'pysb.examples.michment'])].copy()
 
-d = pd.pivot_table(df, index=['n_sim', 'model_name'], columns='simulator',
-                   values='total_time')
+def compare_times(df, save_name=None):
+    sns.catplot(
+        x="n_sim", y="sim_time", hue="simulator", col="model_name",
+        kind="point", data=df, sharey=False
+    )
+    if save_name is not None:
+        plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
 
-d['ratio'] = d['bng'] / d['gpu_ssa']
-print(d)
-d.reset_index(inplace=True)
-print(d)
 
-g = sns.catplot(x='n_sim', y='ratio', data=d, hue='model_name', kind="point", )
+def plot_ratio(data, save_name=None):
+    """
+    Plots the ratio of BNG run times to GPU_SSA run times
+    """
 
-g.set(yscale="log")
-plt.tight_layout()
+    d = pd.pivot_table(
+        data,
+        index=['n_sim', 'model_name'],
+        columns='simulator',
+        values='total_time'
+    )
+
+    d['ratio'] = d['bng'] / d['gpu_ssa']
+
+    d.reset_index(inplace=True)
+    g = sns.catplot(x='n_sim', y='ratio', data=d, hue='model_name',
+                    kind="point")
+
+    g.set(yscale="log")
+    if save_name is not None:
+        plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
+
+
+"""
+For now, i am having to subset data until the rest of the simulations are done.
+
+
+BUU is the newest GPU. I think the paper stats can focus on these times
+Thus, buu_only timing can be used for analysis in paper.
+"""
+
+buu_only = df[df['device_name'] == 'buu'].copy()
+
+# waiting on kinase_cascase and ras_camp_pka to finish on cpu
+models = [
+    'pysb.examples.michment',
+    'pysb.examples.schlogl',
+    'pysb.examples.earm_1_0',
+    # 'pysb.examples.kinase_cascade',
+    # 'pysb.examples.ras_camp_pka'
+]
+
+
+buu_only = buu_only.loc[buu_only.model_name.isin(models)].copy()
+print_opts(buu_only)
+plot_ratio(buu_only)
+compare_times(buu_only)
+
 plt.show()
-print(d)
+
+quit()
+# Looking at mule results (OLD, compared other SSA methods
+mule_only = df[df['device_name'] == 'mule'].copy()
+mule_only = mule_only.loc[mule_only.model_name.isin(models)].copy()
+sim_subset = ['cutauleaping', 'gpu_ssa', 'stochkit_eight_cpu_ssa', 'stochkit_eight_cpu_tau']
+mule_only = mule_only.loc[mule_only.simulator.isin(sim_subset)].copy()
+
+
+compare_times(mule_only)
+
+
+
 
 
 def compare_gpus():

@@ -1,3 +1,11 @@
+"""
+
+Makes sample output of what the results of the simulations should look like
+
+
+"""
+
+
 import logging
 
 # from pysb.examples.ras_camp_pka import model as ras_model

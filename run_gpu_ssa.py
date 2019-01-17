@@ -5,7 +5,7 @@ import socket
 
 import numpy as np
 import pandas as pd
-import pycuda.driver as cuda
+# import pycuda.driver as cuda
 import time
 
 os.environ['CUDA_DEVICE'] = "0"
@@ -14,19 +14,20 @@ os.environ[
     'CUDAPATH'] = r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin"
 
 from pysb.simulator import BngSimulator, StochKitSimulator, GPUSimulator
-from pysb.simulator.cutauleaping import CuTauLeapingSimulator
+from pysb.examples.schlogl import model as scholgl_model
+# from pysb.simulator.cutauleaping import CuTauLeapingSimulator
 from pysb.examples.kinase_cascade import model as kinase_model
-from pysb.examples.ras_camp_pka import model as ras_model
+# from pysb.examples.ras_camp_pka import model as ras_model
 from pysb.logging import setup_logger
 
 computer_name = socket.gethostname().lower()
 dev = os.environ.get("CUDA_DEVICE")
-if dev is None:
-    dev = cuda.Device(dev)
-    gpu_name = dev.name()
-else:
-    dev = 'RTX2080'
-    gpu_name = 'RTX2080'
+# if dev is None:
+#     dev = cuda.Device(dev)
+#     gpu_name = dev.name()
+# else:
+dev = 'RTX2080'
+gpu_name = 'RTX2080'
 
 setup_logger(logging.INFO)
 cur_dir = os.path.dirname(__file__)
@@ -68,7 +69,7 @@ def run(n_sim, model, tspan, simulator='gpu_ssa'):
         return end_time - st, sim._time
 
     elif simulator == 'bng':
-        sim = BngSimulator(model, tspan=tspan)
+        sim = BngSimulator(model, tspan=tspan, verbose=False)
         st = time.time()
         sim.run(n_runs=n_sim)
         eet = time.time()
@@ -105,7 +106,7 @@ def run(n_sim, model, tspan, simulator='gpu_ssa'):
 
 def run_model(model, t_end, n_timesteps):
     tspan = np.linspace(0, t_end, n_timesteps)
-    n_sims = [2 ** i for i in range(7, 18)]
+    n_sims = [2 ** i for i in range(7, 15)]
     all_timing = []
     info = needed_info.copy()
     info['model_name'] = model.name
@@ -162,9 +163,11 @@ def run_tpb_test():
 
 
 if __name__ == "__main__":
-    # run_model(scholgl_model, 100, 101, )
-    # run_model(michment, 100, 101)
-    # quit()
+    run_model(scholgl_model, 100, 3, )
+    run_model(scholgl_model, 100, 101, )
+    quit()
+    run_model(michment, 100, 101)
+
     # run_model(kinase_model, 100, 101)
     # run_model(earm_1, 20000, 101)
     run_model(ras_model, 20000, 101)

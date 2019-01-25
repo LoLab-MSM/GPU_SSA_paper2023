@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,128,101,0.004914283752441406,gpu_ssa,0.12384653091430664
+1,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,256,101,0.005170106887817383,gpu_ssa,0.13470864295959473
+2,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,512,101,0.006019115447998047,gpu_ssa,0.15969395637512207
+3,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,1024,101,0.008195638656616211,gpu_ssa,0.21376776695251465
+4,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,2048,101,0.01403951644897461,gpu_ssa,0.31991028785705566
+5,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,4096,101,0.022902965545654297,gpu_ssa,0.5568761825561523
+6,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,8192,101,0.04408621788024902,gpu_ssa,0.9609849452972412
+7,bad.mc.vanderbilt.edu,100,VOLTA_V100,pysb.examples.michment,16384,101,0.08417701721191406,gpu_ssa,1.8190248012542725

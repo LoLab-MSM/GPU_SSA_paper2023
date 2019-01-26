@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,bad,100,VOLTA_V100,pysb.examples.schlogl,128,101,0.08321118354797363,gpu_ssa,0.2044374942779541
+1,bad,100,VOLTA_V100,pysb.examples.schlogl,256,101,0.07835888862609863,gpu_ssa,0.19376444816589355
+2,bad,100,VOLTA_V100,pysb.examples.schlogl,512,101,0.569267749786377,gpu_ssa,0.6951560974121094
+3,bad,100,VOLTA_V100,pysb.examples.schlogl,1024,101,0.47792983055114746,gpu_ssa,0.6314938068389893
+4,bad,100,VOLTA_V100,pysb.examples.schlogl,2048,101,0.3079097270965576,gpu_ssa,0.511725902557373
+5,bad,100,VOLTA_V100,pysb.examples.schlogl,4096,101,0.6423819065093994,gpu_ssa,0.9707119464874268
+6,bad,100,VOLTA_V100,pysb.examples.schlogl,8192,101,0.6966416835784912,gpu_ssa,1.2608880996704102
+7,bad,100,VOLTA_V100,pysb.examples.schlogl,16384,101,0.7043535709381104,gpu_ssa,1.6463508605957031
+8,bad,100,VOLTA_V100,pysb.examples.schlogl,32768,101,0.8473856449127197,gpu_ssa,2.639531135559082
+9,bad,100,VOLTA_V100,pysb.examples.schlogl,65536,101,1.1418957710266113,gpu_ssa,4.641851902008057

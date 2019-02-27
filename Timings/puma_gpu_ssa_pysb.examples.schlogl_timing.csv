@@ -1,9 +1,0 @@
-,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,puma,100,Tesla K20c,pysb.examples.schlogl,128,101,2.90547704697,gpu_ssa
-1,puma,100,Tesla K20c,pysb.examples.schlogl,256,101,0.267836093903,gpu_ssa
-2,puma,100,Tesla K20c,pysb.examples.schlogl,512,101,0.795643091202,gpu_ssa
-3,puma,100,Tesla K20c,pysb.examples.schlogl,1024,101,0.927226066589,gpu_ssa
-4,puma,100,Tesla K20c,pysb.examples.schlogl,2048,101,1.31185603142,gpu_ssa
-5,puma,100,Tesla K20c,pysb.examples.schlogl,4096,101,1.64477276802,gpu_ssa
-6,puma,100,Tesla K20c,pysb.examples.schlogl,8192,101,2.02012705803,gpu_ssa
-7,puma,100,Tesla K20c,pysb.examples.schlogl,16384,101,2.71478700638,gpu_ssa

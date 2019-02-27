@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,128,101,182.9747622013092,gpu_ssa,184.67017269134521
+1,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,256,101,181.30292510986328,gpu_ssa,181.62787556648254
+2,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,512,101,181.5514886379242,gpu_ssa,182.0533742904663
+3,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,1024,101,181.44878578186035,gpu_ssa,182.28927183151245
+4,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,2048,101,181.40644717216492,gpu_ssa,182.95045733451843
+5,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,4096,101,181.83478546142578,gpu_ssa,184.78663635253906
+6,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,8192,101,183.1571774482727,gpu_ssa,189.1564748287201
+7,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,16384,101,211.9040768146515,gpu_ssa,223.68639612197876
+8,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,32768,101,430.04216837882996,gpu_ssa,453.2273907661438
+9,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.ras_camp_pka,65536,101,818.1861987113953,gpu_ssa,864.2442774772644

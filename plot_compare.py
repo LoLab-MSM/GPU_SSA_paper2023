@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 import seaborn as sns
 from data import gather_data
 
@@ -7,6 +8,12 @@ df = gather_data()
 
 df.loc[df['gpu_name'] == 'gtx1080', 'gpu_name'] = 'GTX1080'
 df.loc[df['gpu_name'] == 'GeForce GTX 1080', 'gpu_name'] = 'GTX1080'
+df.loc[df['gpu_name'] == 'GeForce GTX 1060', 'gpu_name'] = 'GTX1060'
+df.loc[df['gpu_name'] == 'TeslaV100-SXM2-16GB', 'gpu_name'] = 'TeslaV100'
+df.loc[df['gpu_name'] == 'VOLTA_V100', 'gpu_name'] = 'TeslaV100'
+df.loc[df['gpu_name'] == 'Tesla K20c', 'gpu_name'] = 'K20c'
+df = df[df.n_sim < 2 ** 17].copy()
+df = df[df.n_sim > 2 ** 8].copy()
 
 
 def print_opts(d):
@@ -16,16 +23,16 @@ def print_opts(d):
     print(d['simulator'].unique())
 
 
-def compare_times(df, save_name=None):
+def compare_times(df, save_name="time_compare"):
     sns.catplot(
         x="n_sim", y="sim_time", hue="simulator", col="model_name",
         kind="point", data=df, sharey=False
     )
-    if save_name is not None:
-        plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
+
+    plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
 
 
-def plot_ratio(data, save_name=None):
+def plot_ratio(data, save_name="bng_gpu_ratio"):
     """
     Plots the ratio of BNG run times to GPU_SSA run times
     """
@@ -44,8 +51,8 @@ def plot_ratio(data, save_name=None):
                     kind="point")
 
     g.set(yscale="log")
-    if save_name is not None:
-        plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
+
+    plt.savefig('{}.png'.format(save_name), dpi=300, bbox_inches='tight')
 
 
 """
@@ -56,7 +63,7 @@ BUU is the newest GPU. I think the paper stats can focus on these times
 Thus, buu_only timing can be used for analysis in paper.
 """
 
-buu_only = df[df['device_name'] == 'buu'].copy()
+"""
 
 # waiting on kinase_cascase and ras_camp_pka to finish on cpu
 models = [
@@ -66,40 +73,52 @@ models = [
     # 'pysb.examples.kinase_cascade',
     # 'pysb.examples.ras_camp_pka'
 ]
-
+buu_only = df.copy()
+# buu_only = buu_only[buu_only['device_name'].isin(['buu', 'bad'])].copy()
 
 buu_only = buu_only.loc[buu_only.model_name.isin(models)].copy()
 print_opts(buu_only)
+
 plot_ratio(buu_only)
 compare_times(buu_only)
 
 plt.show()
-
-quit()
-# Looking at mule results (OLD, compared other SSA methods
-mule_only = df[df['device_name'] == 'mule'].copy()
-mule_only = mule_only.loc[mule_only.model_name.isin(models)].copy()
-sim_subset = ['cutauleaping', 'gpu_ssa', 'stochkit_eight_cpu_ssa', 'stochkit_eight_cpu_tau']
-mule_only = mule_only.loc[mule_only.simulator.isin(sim_subset)].copy()
-
-
-compare_times(mule_only)
-
-
+#"""
 
 
 
 def compare_gpus():
     pal = sns.light_palette("purple", as_cmap=True)
-    for m in df.model_name.unique():
-        subset = df.loc[df['model_name'] == m].copy()
+    df_gpu = df.loc[df.simulator == 'gpu_ssa'].copy()
+
+    models = [
+        'pysb.examples.michment',
+        'pysb.examples.schlogl',
+        'pysb.examples.earm_1_0',
+        'pysb.examples.kinase_cascade',
+        # 'pysb.examples.ras_camp_pka'
+    ]
+    df_gpu = df_gpu.loc[df_gpu.model_name.isin(models)].copy()
+    # df_gpu = df_gpu.loc[df_gpu.gpu_name.isin(['RTX2080', 'VOLTA_V100'])]
+
+    fig = plt.figure(figsize=(12, 18))
+
+    for n, m in enumerate(df_gpu.model_name.unique()):
+        subset = df_gpu.loc[df_gpu['model_name'] == m].copy()
         d = pd.pivot_table(
-            subset, index='gpu_name', columns='n_sim', values='sim_time'
+            subset, index='gpu_name', columns='n_sim', values='sim_time',
+            fill_value=np.nan,
         )
         d.sort_index(inplace=True)
-        fig = plt.figure(figsize=(10, 4))
-        ax = fig.add_subplot(111)
+
+        ax = fig.add_subplot(5, 1, n + 1)
+        ax.set_title(m)
         sns.heatmap(data=d, cmap=pal, linewidths=0.01, vmin=0, annot=True,
-                    fmt=".2f", ax=ax)
-        plt.tight_layout()
-        plt.show()
+                    fmt=".3f", ax=ax)
+
+    plt.tight_layout()
+    plt.savefig("compare_gpus.png", bbox_inches='tight', dpi=300)
+    plt.show()
+
+
+compare_gpus()

@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,diablo,100,GTX980Ti,pysb.examples.schlogl,128,101,0.18199419975280762,gpu_ssa,2.1253037452697754
+1,diablo,100,GTX980Ti,pysb.examples.schlogl,256,101,0.1575777530670166,gpu_ssa,0.3257102966308594
+2,diablo,100,GTX980Ti,pysb.examples.schlogl,512,101,1.024813175201416,gpu_ssa,1.1972832679748535
+3,diablo,100,GTX980Ti,pysb.examples.schlogl,1024,101,0.40286731719970703,gpu_ssa,0.5293376445770264
+4,diablo,100,GTX980Ti,pysb.examples.schlogl,2048,101,1.0760390758514404,gpu_ssa,1.2920517921447754
+5,diablo,100,GTX980Ti,pysb.examples.schlogl,4096,101,1.0790433883666992,gpu_ssa,1.3477060794830322
+6,diablo,100,GTX980Ti,pysb.examples.schlogl,8192,101,1.2905895709991455,gpu_ssa,1.719881296157837
+7,diablo,100,GTX980Ti,pysb.examples.schlogl,16384,101,1.7454466819763184,gpu_ssa,2.3619117736816406
+8,diablo,100,GTX980Ti,pysb.examples.schlogl,32768,101,2.201845645904541,gpu_ssa,3.461344003677368
+9,diablo,100,GTX980Ti,pysb.examples.schlogl,65536,101,3.6781020164489746,gpu_ssa,5.933423280715942

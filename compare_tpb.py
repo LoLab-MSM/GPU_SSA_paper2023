@@ -10,7 +10,7 @@ Results: Use 32 threads per block!
 
 
 """
-df = pd.read_csv('Timings/rtx2080_tpb_times.csv',
+df = pd.read_csv('Timings/gtx1070_tpb_times.csv',
                  names=['n_sim', 'tpb', 'block', 'time'], delimiter=' ')
 
 print(df)

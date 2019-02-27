@@ -1,0 +1,6 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,picollo,100,GTX1060,pysb.examples.schlogl,128,101,4.989999999999991,bng,11.391812562942505
+1,picollo,100,GTX1060,pysb.examples.schlogl,256,101,9.809999999999997,bng,22.651432991027832
+2,picollo,100,GTX1060,pysb.examples.schlogl,512,101,20.610000000000095,bng,45.49779534339905
+3,picollo,100,GTX1060,pysb.examples.schlogl,1024,101,41.71000000000006,bng,90.2083888053894
+4,picollo,100,GTX1060,pysb.examples.schlogl,2048,101,81.0799999999994,bng,179.56896877288818

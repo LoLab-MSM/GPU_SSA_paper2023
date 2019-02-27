@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,128,101,29.81239151954651,gpu_ssa,31.59661555290222
+1,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,256,101,28.196346759796143,gpu_ssa,28.382516622543335
+2,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,512,101,28.336200714111328,gpu_ssa,28.544714212417603
+3,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,1024,101,30.393183946609497,gpu_ssa,30.641433477401733
+4,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,2048,101,31.677058458328247,gpu_ssa,31.988767623901367
+5,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,4096,101,53.111342430114746,gpu_ssa,53.61646556854248
+6,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,8192,101,103.66104459762573,gpu_ssa,104.44938707351685
+7,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,16384,101,186.64736771583557,gpu_ssa,188.03142738342285
+8,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,32768,101,375.17004227638245,gpu_ssa,377.67291808128357
+9,diablo,100,GTX980Ti,pysb.examples.kinase_cascade,65536,101,745.5984675884247,gpu_ssa,750.6544179916382

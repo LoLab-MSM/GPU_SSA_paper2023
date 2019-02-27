@@ -7,7 +7,7 @@ def gather_data():
     cols = ['device_name', 'end_time', 'gpu_name', 'model_name', 'n_sim', 'n_ts',
             'sim_time', 'simulator', 'total_time']
     for i in os.listdir('Timings'):
-        if i == 'times.csv':
+        if i in ('times.csv', 'gtx1070_tpb_times.csv'):
             continue
         try:
             d = pd.read_csv('Timings/' + i)

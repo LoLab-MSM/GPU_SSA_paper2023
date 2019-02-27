@@ -1,9 +1,9 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
-0,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,128,101,0.028632164001464844,gpu_ssa,1.6132190227508545
-1,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,256,101,0.025562763214111328,gpu_ssa,0.2338552474975586
-2,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,512,101,0.04029417037963867,gpu_ssa,0.2873711585998535
-3,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,1024,101,0.0693063735961914,gpu_ssa,0.4359142780303955
-4,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,2048,101,0.11936640739440918,gpu_ssa,0.726719856262207
-5,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,4096,101,0.22071361541748047,gpu_ssa,1.3175742626190186
-6,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,8192,101,0.42546677589416504,gpu_ssa,2.4782590866088867
-7,bad.mc.vanderbilt.edu,2000,RTX2080,pysb.examples.earm_1_0,16384,101,0.8445489406585693,gpu_ssa,4.967095375061035
+0,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,128,101,248.49222469329834,gpu_ssa,248.65588903427124
+1,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,256,101,221.79967975616455,gpu_ssa,222.00656700134277
+2,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,512,101,240.0050084590912,gpu_ssa,240.25250101089478
+3,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,1024,101,228.1560184955597,gpu_ssa,228.52510356903076
+4,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,2048,101,224.8886969089508,gpu_ssa,225.5013473033905
+5,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,4096,101,225.23007035255432,gpu_ssa,226.33228278160095
+6,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,8192,101,228.6872730255127,gpu_ssa,230.76939177513123
+7,bad.mc.vanderbilt.edu,20000,VOLTA_V100,pysb.examples.earm_1_0,16384,101,636.2822909355164,gpu_ssa,640.2973947525024

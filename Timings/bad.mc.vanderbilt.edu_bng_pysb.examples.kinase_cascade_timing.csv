@@ -1,0 +1,6 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,128,101,524.1500000000003,bng,526.6834940910339
+1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,256,101,1051.3699999999983,bng,1056.0299639701843
+2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,512,101,2102.810000000006,bng,2111.618108510971
+3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,1024,101,4199.720000000006,bng,4216.653133153915
+4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,2048,101,8393.109999999971,bng,8427.760016918182

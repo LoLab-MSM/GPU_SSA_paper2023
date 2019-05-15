@@ -1,0 +1,9 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,buu,20000,RTX2080,pysb.examples.earm_1_0,128,101,585.774,stochkit,586.5390095710754
+1,buu,20000,RTX2080,pysb.examples.earm_1_0,256,101,1186.36,stochkit,1187.5958650112152
+2,buu,20000,RTX2080,pysb.examples.earm_1_0,512,101,2311.65,stochkit,2313.9499685764313
+3,buu,20000,RTX2080,pysb.examples.earm_1_0,1024,101,4693.19,stochkit,4697.609314918518
+4,buu,20000,RTX2080,pysb.examples.earm_1_0,2048,101,9352.04,stochkit,9360.659945726395
+5,buu,20000,RTX2080,pysb.examples.earm_1_0,4096,101,18576.7,stochkit,18593.787166118622
+6,buu,20000,RTX2080,pysb.examples.earm_1_0,8192,101,37244.6,stochkit,37278.598306655884
+7,buu,20000,RTX2080,pysb.examples.earm_1_0,16384,101,74613.2,stochkit,74680.77270698547

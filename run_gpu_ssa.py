@@ -10,9 +10,11 @@ import numpy as np
 import pandas as pd
 import time
 
-from pysb.simulator import BngSimulator, CUDASimulator, OpenCLSimulator
+from pysb.simulator import BngSimulator, CUDASimulator, OpenCLSimulator, \
+    StochKitSimulator
 from pysb.logging import setup_logger
 from pycuda.driver import Device
+from pysb.pathfinder import set_path
 computer_name = socket.gethostname().lower()
 
 gpu_name = ''.join([i for i in Device(int(gpu_id)).name().split(' ')
@@ -23,13 +25,7 @@ print("gpu = {}".format(gpu_name))
 setup_logger(logging.INFO)
 
 cur_dir = os.path.dirname(__file__)
-
-needed_info = dict(model_name=None,
-                   n_sim=None,
-                   n_ts=None,
-                   end_time=None,
-                   sim_time=None
-                   )
+set_path('stochkit_ssa', '/home/pinojc/git/StochKit')
 
 
 def write(row_dict):
@@ -59,19 +55,26 @@ def run(n_sim, model, tspan, simulator='gpu_ssa'):
                               multi_gpu=False)
     elif simulator == 'bng':
         sim = BngSimulator(model, tspan=tspan, verbose=v)
+    elif simulator == 'stochkit':
+        sim = StochKitSimulator(model, tspan=tspan, verbose=v, cleanup=False)
     else:
         return
     st = time.time()
-    sim.run(tspan, number_sim=n_sim)
+    if simulator == 'bng':
+        sim.run(tspan, n_runs=n_sim)
+    elif simulator == 'stochkit':
+        sim.run(tspan, n_runs=n_sim)
+    else:
+        sim.run(tspan, number_sim=n_sim)
     end_time = time.time()
-    return end_time - st, sim._time
+    total_time = end_time - st
+    return total_time, sim._time
 
 
-def run_model(model, t_end, n_timesteps):
+def run_model(model, t_end, n_timesteps, max_sim=17):
     tspan = np.linspace(0, t_end, n_timesteps)
     n_sims = [2 ** i for i in range(7, 17)]
-    all_timing = []
-    info = needed_info.copy()
+    info = dict()
     info['model_name'] = model.name
     info['device_name'] = computer_name
     info['n_ts'] = n_timesteps
@@ -80,30 +83,28 @@ def run_model(model, t_end, n_timesteps):
 
     def _run(sim_name):
         local_only = []
+        out_name = os.path.join(
+            cur_dir,
+            'Timings',
+            '{}_{}_{}_timing.csv'.format(computer_name, sim_name, model.name)
+        )
         for i in n_sims:
             local_info = info.copy()
             local_info['n_sim'] = i
             local_info['simulator'] = sim_name
-            total_time, t_taken = run(i, model, tspan, sim_name)
-            local_info['sim_time'] = t_taken
+            total_time, sim_time = run(i, model, tspan, sim_name)
+            local_info['sim_time'] = sim_time
             local_info['total_time'] = total_time
-            all_timing.append(local_info)
             local_only.append(local_info)
             write(local_info)
-        # return
         tmp_pd = pd.DataFrame(local_only)
         print(tmp_pd)
-        tmp_pd.to_csv(
-            os.path.join(cur_dir, 'Timings',
-                         '{}_{}_{}_timing.csv'.format(computer_name,
-                                                      sim_name,
-                                                      model.name, )))
+        tmp_pd.to_csv(out_name)
 
-
-    _run('cl')
+    # _run('cl')
     # _run('gpu_ssa')
+    _run("stochkit")
     # _run('bng')
-    return all_timing
 
 
 def run2(n_sim, model, t_end, n_timesteps, threads):
@@ -131,7 +132,9 @@ if __name__ == "__main__":
     from pysb.examples.earm_1_0 import model as earm_1
     # 4.3341310024261475
     # run_model(scholgl_model, 100, 101, )
+    # quit()
     # run_model(michment, 100, 101)
-    run_model(kinase_model, 100, 101)
-    run_model(earm_1, 20000, 101)
+    run_model(kinase_model, 100, 101, 11)
+    # run_model(earm_1, 20000, 101, 11)
+    quit()
     # run_model(ras_model, 20000, 101)

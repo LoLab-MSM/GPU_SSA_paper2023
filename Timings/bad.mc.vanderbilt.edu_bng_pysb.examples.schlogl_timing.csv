@@ -1,6 +1,11 @@
 ,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
-0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,128,101,4.870000000000002,bng,6.120575189590454
-1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,256,101,9.599999999999975,bng,12.04179048538208
-2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,512,101,19.7599999999998,bng,24.17914628982544
-3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,1024,101,39.36999999999955,bng,47.89334988594055
-4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,2048,101,78.86000000000129,bng,95.93303918838501
+0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,128,101,4.670000000000001,bng,6.033418655395508
+1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,256,101,9.339999999999979,bng,11.787067413330078
+2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,512,101,19.009999999999817,bng,23.699328899383545
+3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,1024,101,38.44999999999968,bng,47.504345655441284
+4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,2048,101,75.68000000000097,bng,93.20948791503906
+5,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,4096,101,152.33000000000436,bng,187.54161930084229
+6,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,8192,101,304.8999999999993,bng,375.34375381469727
+7,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,16384,101,608.8799999999533,bng,751.2309889793396
+8,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,32768,101,1223.4699999993982,bng,1513.4048719406128
+9,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.schlogl,65536,101,2464.2799999988515,bng,3048.86119055748

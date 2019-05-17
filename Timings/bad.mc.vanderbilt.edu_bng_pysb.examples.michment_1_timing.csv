@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_cpu,n_sim,n_ts,sim_time,simulator,total_time
+0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,128,101,0.3669000000000005,bng,1.5151846408843994
+1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,256,101,0.7554000000000022,bng,2.826094150543213
+2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,512,101,1.4619999999999909,bng,5.359417676925659
+3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,1024,101,2.926799999999981,bng,10.504914283752441
+4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,2048,101,5.858099999999984,bng,20.89759874343872
+5,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,4096,101,11.741400000000551,bng,41.869638442993164
+6,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,8192,101,23.52200000000228,bng,83.91720914840698
+7,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,16384,101,47.25299999999762,bng,170.46712613105774
+8,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,32768,101,94.37599999996523,bng,343.9948265552521
+9,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.michment,1,65536,101,189.68020000000783,bng,715.2930080890656

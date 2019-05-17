@@ -1,0 +1,5 @@
+,device_name,end_time,gpu_name,model_name,n_cpu,n_sim,n_ts,sim_time,simulator,total_time
+0,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,128,101,55.286,stochkit,56.30165481567383
+1,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,256,101,106.223,stochkit,107.92901134490967
+2,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,512,101,174.918,stochkit,177.49573636054993
+3,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,1024,101,337.285,stochkit,343.3681344985962

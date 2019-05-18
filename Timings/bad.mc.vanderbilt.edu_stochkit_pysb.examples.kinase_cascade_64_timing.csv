@@ -1,5 +1,11 @@
 ,device_name,end_time,gpu_name,model_name,n_cpu,n_sim,n_ts,sim_time,simulator,total_time
-0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,128,101,5.97027,stochkit,6.405803203582764
-1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,256,101,10.9179,stochkit,11.616577386856079
-2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,512,101,21.1751,stochkit,22.378167867660522
-3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,1024,101,38.624,stochkit,40.86904454231262
+0,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,128,101,5.96381,stochkit,6.405238389968872
+1,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,256,101,10.5863,stochkit,11.265840530395508
+2,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,512,101,22.4429,stochkit,23.62486505508423
+3,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,1024,101,36.2887,stochkit,38.47803783416748
+4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,2048,101,68.7726,stochkit,72.94263553619385
+5,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,4096,101,134.534,stochkit,143.91833353042603
+6,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,8192,101,265.459,stochkit,281.7275757789612
+7,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,16384,101,550.344,stochkit,582.5787706375122
+8,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,32768,101,1104.34,stochkit,1168.6244258880615
+9,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,64,65536,101,2142.31,stochkit,2275.9469389915466

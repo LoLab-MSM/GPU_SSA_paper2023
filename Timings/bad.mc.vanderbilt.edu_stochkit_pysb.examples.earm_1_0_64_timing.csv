@@ -4,3 +4,8 @@
 2,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,512,101,168.929,stochkit,171.2460949420929
 3,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,1024,101,313.073,stochkit,317.4085795879364
 4,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,2048,101,593.39,stochkit,601.7770512104034
+5,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,4096,101,1163.14,stochkit,1179.4241247177124
+6,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,8192,101,2296.05,stochkit,2327.9559314250946
+7,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,16384,101,4535.86,stochkit,4599.690459012985
+8,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,32768,101,9144.92,stochkit,9272.081717252731
+9,bad.mc.vanderbilt.edu,20000,TeslaV100-SXM2-16GB,pysb.examples.earm_1_0,64,65536,101,18158.8,stochkit,18412.23834013939

@@ -6,3 +6,6 @@
 4,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,2048,101,8393.109999999971,bng,8427.760016918182
 5,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,4096,101,16418.157499999987,bng,16482.71497654915
 6,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,8192,101,32634.33430000006,bng,32765.910714626312
+7,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,16384,101,65257.74200000011,bng,65523.1833255291
+8,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,32768,101,130748.74970000098,bng,131302.95330381393
+9,bad.mc.vanderbilt.edu,100,TeslaV100-SXM2-16GB,pysb.examples.kinase_cascade,65536,101,261432.90679999947,bng,262500.8293623924

@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,mule,100,GTX1080,pysb.examples.kinase_cascade,128,101,21.430705070495605,cl,21.729358911514282
+1,mule,100,GTX1080,pysb.examples.kinase_cascade,256,101,34.05022835731506,cl,34.198415994644165
+2,mule,100,GTX1080,pysb.examples.kinase_cascade,512,101,34.16733264923096,cl,34.367855072021484
+3,mule,100,GTX1080,pysb.examples.kinase_cascade,1024,101,34.09501910209656,cl,34.39822602272034
+4,mule,100,GTX1080,pysb.examples.kinase_cascade,2048,101,34.147422790527344,cl,34.656248569488525
+5,mule,100,GTX1080,pysb.examples.kinase_cascade,4096,101,34.20209360122681,cl,35.12670969963074
+6,mule,100,GTX1080,pysb.examples.kinase_cascade,8192,101,68.47570753097534,cl,70.28347182273865
+7,mule,100,GTX1080,pysb.examples.kinase_cascade,16384,101,136.80023837089539,cl,140.57282781600952
+8,mule,100,GTX1080,pysb.examples.kinase_cascade,32768,101,239.58739018440247,cl,246.38192534446716
+9,mule,100,GTX1080,pysb.examples.kinase_cascade,65536,101,445.30747652053833,cl,458.9554362297058

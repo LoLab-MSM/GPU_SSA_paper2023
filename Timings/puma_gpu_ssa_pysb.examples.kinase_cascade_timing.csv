@@ -1,0 +1,11 @@
+,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
+0,puma,100,TeslaK20c,pysb.examples.kinase_cascade,128,101,27.742212295532227,gpu_ssa,29.57348918914795
+1,puma,100,TeslaK20c,pysb.examples.kinase_cascade,256,101,27.764389991760254,gpu_ssa,28.011253833770752
+2,puma,100,TeslaK20c,pysb.examples.kinase_cascade,512,101,27.784995079040527,gpu_ssa,28.104766607284546
+3,puma,100,TeslaK20c,pysb.examples.kinase_cascade,1024,101,27.80426597595215,gpu_ssa,28.287333965301514
+4,puma,100,TeslaK20c,pysb.examples.kinase_cascade,2048,101,31.14830207824707,gpu_ssa,31.96511697769165
+5,puma,100,TeslaK20c,pysb.examples.kinase_cascade,4096,101,61.827887296676636,gpu_ssa,63.33386516571045
+6,puma,100,TeslaK20c,pysb.examples.kinase_cascade,8192,101,93.19649052619934,gpu_ssa,96.26368474960327
+7,puma,100,TeslaK20c,pysb.examples.kinase_cascade,16384,101,156.51070189476013,gpu_ssa,162.15081405639648
+8,puma,100,TeslaK20c,pysb.examples.kinase_cascade,32768,101,312.80311012268066,gpu_ssa,323.9869327545166
+9,puma,100,TeslaK20c,pysb.examples.kinase_cascade,65536,101,622.2517375946045,gpu_ssa,643.4619665145874

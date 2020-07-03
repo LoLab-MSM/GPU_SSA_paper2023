@@ -1,0 +1,11 @@
+ ,model_name                  ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,128  ,cl_nvidia,RTX2080 ,16.869518995285034,16.745405912399292
+1,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,256  ,cl_nvidia,RTX2080 ,16.805219411849976,16.672107458114624
+2,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,512  ,cl_nvidia,RTX2080 ,16.812150955200195,16.666139125823975
+3,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,1024 ,cl_nvidia,RTX2080 ,16.784828901290894,16.593663692474365
+4,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,2048 ,cl_nvidia,RTX2080 ,20.581135988235474,20.292882680892944
+5,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,4096 ,cl_nvidia,RTX2080 ,27.505212783813477,27.032792806625366
+6,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,8192 ,cl_nvidia,RTX2080 ,54.45886206626892 ,53.59255504608154
+7,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,16384,cl_nvidia,RTX2080 ,108.28491878509521,106.71498727798462
+8,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,32768,cl_nvidia,RTX2080 ,216.45730710029602,213.3639395236969
+9,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,65536,cl_nvidia,RTX2080 ,431.194881439209  ,425.15840673446655

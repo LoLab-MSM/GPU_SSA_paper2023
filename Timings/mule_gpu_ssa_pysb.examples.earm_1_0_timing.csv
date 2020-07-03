@@ -1,9 +1,11 @@
-,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator
-0,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,128,101,2100.59157395,gpu_ssa
-1,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,256,101,2118.88117599,gpu_ssa
-2,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,512,101,2141.84165907,gpu_ssa
-3,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,1024,101,2115.28238082,gpu_ssa
-4,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,2048,101,2120.36068797,gpu_ssa
-5,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,4096,101,2501.1633141,gpu_ssa
-6,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,8192,101,4902.83369207,gpu_ssa
-7,mule,20000,GeForce GTX 1080,pysb.examples.earm_1_0,16384,101,9589.03907895,gpu_ssa
+ ,device_name,end_time,gpu_name,model_name            ,n_sim,n_ts,sim_time          ,simulator,total_time
+0,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,128  ,101 ,643.9519548416138 ,gpu_ssa  ,644.0911231040955
+1,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,256  ,101 ,594.3647418022156 ,gpu_ssa  ,594.5077979564667
+2,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,512  ,101 ,593.3635079860687 ,gpu_ssa  ,593.543054819107
+3,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,1024 ,101 ,656.6272530555725 ,gpu_ssa  ,656.8821051120758
+4,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,2048 ,101 ,683.9868311882019 ,gpu_ssa  ,684.3918919563293
+5,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,4096 ,101 ,925.8672142028809 ,gpu_ssa  ,926.6345729827881
+6,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,8192 ,101 ,1873.4603869915009,gpu_ssa  ,1874.8024671077728
+7,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,16384,101 ,3534.7988538742065,gpu_ssa  ,3537.3416650295258
+8,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,32768,101 ,6699.962236881256 ,gpu_ssa  ,6704.991811037064
+9,mule       ,20000   ,GTX1080 ,pysb.examples.earm_1_0,65536,101 ,12655.543877124786,gpu_ssa  ,12665.652638912201

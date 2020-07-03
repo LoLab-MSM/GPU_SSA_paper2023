@@ -1,0 +1,11 @@
+ ,model_name                  ,device_name,n_ts,end_time,n_sim,simulator ,gpu_name  ,total_time        ,sim_time
+0,pysb.examples.kinase_cascade,buu        ,101 ,100     ,128  ,cl_amd_gpu,Radeon Vii,10.158882856369019,10.097043514251709
+1,pysb.examples.kinase_cascade,buu        ,101 ,100     ,256  ,cl_amd_gpu,Radeon Vii,10.172840118408203,10.101164817810059
+2,pysb.examples.kinase_cascade,buu        ,101 ,100     ,512  ,cl_amd_gpu,Radeon Vii,10.200385808944702,10.09922981262207
+3,pysb.examples.kinase_cascade,buu        ,101 ,100     ,1024 ,cl_amd_gpu,Radeon Vii,10.26413106918335 ,10.100701570510864
+4,pysb.examples.kinase_cascade,buu        ,101 ,100     ,2048 ,cl_amd_gpu,Radeon Vii,10.383983612060547,10.10315489768982
+5,pysb.examples.kinase_cascade,buu        ,101 ,100     ,4096 ,cl_amd_gpu,Radeon Vii,10.658042192459106,10.101603746414185
+6,pysb.examples.kinase_cascade,buu        ,101 ,100     ,8192 ,cl_amd_gpu,Radeon Vii,11.104429483413696,10.106800079345703
+7,pysb.examples.kinase_cascade,buu        ,101 ,100     ,16384,cl_amd_gpu,Radeon Vii,22.11270236968994 ,20.143919229507446
+8,pysb.examples.kinase_cascade,buu        ,101 ,100     ,32768,cl_amd_gpu,Radeon Vii,34.1173050403595  ,30.21735978126526
+9,pysb.examples.kinase_cascade,buu        ,101 ,100     ,65536,cl_amd_gpu,Radeon Vii,58.20152235031128 ,50.458760499954224

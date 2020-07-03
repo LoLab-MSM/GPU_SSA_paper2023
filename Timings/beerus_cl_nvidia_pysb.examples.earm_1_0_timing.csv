@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,128  ,cl_nvidia,RTX2080 ,554.8461141586304 ,553.9487953186035
+1,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,256  ,cl_nvidia,RTX2080 ,593.6026411056519 ,593.3814392089844
+2,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,512  ,cl_nvidia,RTX2080 ,599.5538036823273 ,599.2825570106506
+3,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,1024 ,cl_nvidia,RTX2080 ,601.2187256813049 ,600.8313727378845
+4,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,2048 ,cl_nvidia,RTX2080 ,680.8462102413177 ,680.2176322937012
+5,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,4096 ,cl_nvidia,RTX2080 ,823.8049166202545 ,822.6648800373077
+6,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,8192 ,cl_nvidia,RTX2080 ,1897.8845546245575,1895.8155992031097
+7,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,16384,cl_nvidia,RTX2080 ,3026.1985476017   ,3022.16473031044
+8,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,32768,cl_nvidia,RTX2080 ,5825.345813989639 ,5817.478819131851
+9,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,65536,cl_nvidia,RTX2080 ,11449.235351324081,11433.579533100128

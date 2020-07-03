@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time         ,sim_time
+0,pysb.examples.michment,beerus     ,101 ,100     ,128  ,cl_nvidia,RTX2080 ,0.15413975715637207,0.006005764007568359
+1,pysb.examples.michment,beerus     ,101 ,100     ,256  ,cl_nvidia,RTX2080 ,0.10709738731384277,0.005004405975341797
+2,pysb.examples.michment,beerus     ,101 ,100     ,512  ,cl_nvidia,RTX2080 ,0.12411260604858398,0.005003929138183594
+3,pysb.examples.michment,beerus     ,101 ,100     ,1024 ,cl_nvidia,RTX2080 ,0.15514087677001953,0.0050048828125
+4,pysb.examples.michment,beerus     ,101 ,100     ,2048 ,cl_nvidia,RTX2080 ,0.2302086353302002 ,0.006005525588989258
+5,pysb.examples.michment,beerus     ,101 ,100     ,4096 ,cl_nvidia,RTX2080 ,0.36733293533325195,0.007006406784057617
+6,pysb.examples.michment,beerus     ,101 ,100     ,8192 ,cl_nvidia,RTX2080 ,0.6255674362182617 ,0.012010812759399414
+7,pysb.examples.michment,beerus     ,101 ,100     ,16384,cl_nvidia,RTX2080 ,1.1940834522247314 ,0.02302098274230957
+8,pysb.examples.michment,beerus     ,101 ,100     ,32768,cl_nvidia,RTX2080 ,2.265617847442627  ,0.0470430850982666
+9,pysb.examples.michment,beerus     ,101 ,100     ,65536,cl_nvidia,RTX2080 ,4.450059652328491  ,0.08607816696166992

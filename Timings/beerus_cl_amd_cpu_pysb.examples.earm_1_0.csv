@@ -1,0 +1,11 @@
+ ,device_name,end_time,gpu_name   ,model_name            ,n_sim,n_ts,sim_time          ,simulator ,total_time
+0,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,128  ,10  ,71.28756070137024 ,cl_amd_cpu,71.43656134605408
+1,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,256  ,10  ,138.66520738601685,cl_amd_cpu,138.84620833396912
+2,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,512  ,10  ,269.31553173065186,cl_amd_cpu,269.6145164966583
+3,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,1024 ,10  ,517.2382743358612 ,cl_amd_cpu,517.7992584705353
+4,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,2048 ,10  ,1027.4081394672394,cl_amd_cpu,1028.4491441249847
+5,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,4096 ,10  ,2066.5484223365784,cl_amd_cpu,2068.6554260253906
+6,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,8192 ,10  ,4081.6579554080963,cl_amd_cpu,4085.819934129715
+7,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,16384,10  ,8190.835374593735 ,cl_amd_cpu,8198.869372844696
+8,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,32768,10  ,16181.393638372421,cl_amd_cpu,16197.292738437653
+9,buu        ,20000   ,Ryzen_3900x,pysb.examples.earm_1_0,65536,10  ,32311.92008972168 ,cl_amd_cpu,32344.13814353943

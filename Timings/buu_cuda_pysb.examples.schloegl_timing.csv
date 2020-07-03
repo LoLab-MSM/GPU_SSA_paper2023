@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time         ,sim_time
+0,pysb.examples.schloegl,buu        ,101 ,100     ,128  ,cuda     ,RTX2080 ,0.23992371559143066,0.1443037986755371
+1,pysb.examples.schloegl,buu        ,101 ,100     ,256  ,cuda     ,RTX2080 ,0.19591259956359863,0.09194612503051758
+2,pysb.examples.schloegl,buu        ,101 ,100     ,512  ,cuda     ,RTX2080 ,0.34781599044799805,0.22185778617858887
+3,pysb.examples.schloegl,buu        ,101 ,100     ,1024 ,cuda     ,RTX2080 ,0.7382590770721436 ,0.5797624588012695
+4,pysb.examples.schloegl,buu        ,101 ,100     ,2048 ,cuda     ,RTX2080 ,0.8150739669799805 ,0.5834782123565674
+5,pysb.examples.schloegl,buu        ,101 ,100     ,4096 ,cuda     ,RTX2080 ,0.9595537185668945 ,0.5841422080993652
+6,pysb.examples.schloegl,buu        ,101 ,100     ,8192 ,cuda     ,RTX2080 ,1.354551076889038  ,0.6716876029968262
+7,pysb.examples.schloegl,buu        ,101 ,100     ,16384,cuda     ,RTX2080 ,2.2700421810150146 ,0.9503321647644043
+8,pysb.examples.schloegl,buu        ,101 ,100     ,32768,cuda     ,RTX2080 ,4.3625733852386475 ,1.8072967529296875
+9,pysb.examples.schloegl,buu        ,101 ,100     ,65536,cuda     ,RTX2080 ,7.079988241195679  ,2.100358486175537

@@ -1,0 +1,8 @@
+ ,device_name,end_time,gpu_name,model_name           ,n_sim,n_ts,sim_time          ,simulator   ,total_time
+0,pct        ,100     ,i5_6500T,pysb.examples.schlogl,256  ,101 ,0.4766244888305664,cl_intel_gpu,0.9959399700164795
+1,pct        ,100     ,i5_6500T,pysb.examples.schlogl,512  ,101 ,3.0717854499816895,cl_intel_gpu,3.1361911296844482
+2,pct        ,100     ,i5_6500T,pysb.examples.schlogl,1024 ,101 ,1.3613190650939941,cl_intel_gpu,1.4640038013458252
+3,pct        ,100     ,i5_6500T,pysb.examples.schlogl,2048 ,101 ,3.056138753890991 ,cl_intel_gpu,3.2593533992767334
+4,pct        ,100     ,i5_6500T,pysb.examples.schlogl,4096 ,101 ,4.6710546016693115,cl_intel_gpu,5.028920888900757
+5,pct        ,100     ,i5_6500T,pysb.examples.schlogl,8192 ,101 ,6.128603219985962 ,cl_intel_gpu,6.808073043823242
+6,pct        ,100     ,i5_6500T,pysb.examples.schlogl,16384,101 ,8.631959676742554 ,cl_intel_gpu,9.926692962646484

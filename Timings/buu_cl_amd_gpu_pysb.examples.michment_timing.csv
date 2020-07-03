@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator ,gpu_name  ,total_time         ,sim_time
+0,pysb.examples.michment,buu        ,101 ,100     ,128  ,cl_amd_gpu,Radeon Vii,0.35038137435913086,0.006464958190917969
+1,pysb.examples.michment,buu        ,101 ,100     ,256  ,cl_amd_gpu,Radeon Vii,0.04349017143249512,0.004728794097900391
+2,pysb.examples.michment,buu        ,101 ,100     ,512  ,cl_amd_gpu,Radeon Vii,0.06458497047424316,0.004960298538208008
+3,pysb.examples.michment,buu        ,101 ,100     ,1024 ,cl_amd_gpu,Radeon Vii,0.1096951961517334 ,0.004851579666137695
+4,pysb.examples.michment,buu        ,101 ,100     ,2048 ,cl_amd_gpu,Radeon Vii,0.19465255737304688,0.004952669143676758
+5,pysb.examples.michment,buu        ,101 ,100     ,4096 ,cl_amd_gpu,Radeon Vii,0.378345251083374  ,0.00571131706237793
+6,pysb.examples.michment,buu        ,101 ,100     ,8192 ,cl_amd_gpu,Radeon Vii,0.7225608825683594 ,0.005276679992675781
+7,pysb.examples.michment,buu        ,101 ,100     ,16384,cl_amd_gpu,Radeon Vii,1.4540934562683105 ,0.008500099182128906
+8,pysb.examples.michment,buu        ,101 ,100     ,32768,cl_amd_gpu,Radeon Vii,2.8571553230285645 ,0.011769771575927734
+9,pysb.examples.michment,buu        ,101 ,100     ,65536,cl_amd_gpu,Radeon Vii,5.6556077003479    ,0.01704263687133789

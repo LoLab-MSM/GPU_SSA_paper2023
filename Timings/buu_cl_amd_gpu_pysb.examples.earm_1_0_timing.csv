@@ -1,0 +1,11 @@
+device_name,end_time,gpu_name  ,model_name            ,n_sim,n_ts,sim_time          ,simulator ,total_time391983
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,128  ,101 ,1465.577688217163 ,cl_amd_gpu,1466.2221050262451
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,256  ,101 ,1410.1058659553528,cl_amd_gpu,1410.2838623523712
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,512  ,101 ,1737.079089641571 ,cl_amd_gpu,1737.3722658157349
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,1024 ,101 ,1437.321389913559 ,cl_amd_gpu,1438.4927248954773
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,2048 ,101 ,1740.3000242710114,cl_amd_gpu,1741.4374792575836
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,4096 ,101 ,2523.2748658657074,cl_amd_gpu,2524.587602853775
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,8192 ,101 ,2552.3807804584503,cl_amd_gpu,2555.057525873184
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,16384,101 ,4442.79251408577  ,cl_amd_gpu,4447.648475885391
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,32768,101 ,7631.236839771271 ,cl_amd_gpu,7640.812541007996
+buu        ,20000   ,Radeon Vii,pysb.examples.earm_1_0,65536,101 ,9549.587562322617 ,cl_amd_gpu,9568.822883367538

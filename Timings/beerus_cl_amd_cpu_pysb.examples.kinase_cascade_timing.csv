@@ -1,0 +1,11 @@
+device_name,end_time,gpu_name   ,model_name                  ,n_sim,n_ts,sim_time          ,simulator ,total_time391983
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,128  ,101 ,2.7904021739959717,cl_amd_cpu,3.079453706741333
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,256  ,101 ,5.468206882476807 ,cl_amd_cpu,5.525256156921387
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,512  ,101 ,10.726232528686523,cl_amd_cpu,10.79829478263855
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,1024 ,101 ,21.143199682235718,cl_amd_cpu,21.260300397872925
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,2048 ,101 ,42.065709352493286,cl_amd_cpu,42.27038526535034
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,4096 ,101 ,98.72751045227051 ,cl_amd_cpu,99.14088606834412
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,8192 ,101 ,197.409912109375  ,cl_amd_cpu,198.22010803222656
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,16384,101 ,391.07071447372437,cl_amd_cpu,392.5796263217926
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,32768,101 ,777.591404914856  ,cl_amd_cpu,780.646888256073
+beerus     ,100     ,Ryzen_3900x,pysb.examples.kinase_cascade,65536,101 ,1915.9799559116364,cl_amd_cpu,1915.9799559116364

@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator ,gpu_name   ,total_time         ,sim_time
+0,pysb.examples.schloegl,beerus     ,101 ,100     ,128  ,cl_amd_cpu,Ryzen_3900x,0.19104909896850586,0.019016265869140625
+1,pysb.examples.schloegl,beerus     ,101 ,100     ,256  ,cl_amd_cpu,Ryzen_3900x,0.05204486846923828,0.022019147872924805
+2,pysb.examples.schloegl,beerus     ,101 ,100     ,512  ,cl_amd_cpu,Ryzen_3900x,0.08807587623596191,0.056548357009887695
+3,pysb.examples.schloegl,beerus     ,101 ,100     ,1024 ,cl_amd_cpu,Ryzen_3900x,0.14812803268432617,0.09758448600769043
+4,pysb.examples.schloegl,beerus     ,101 ,100     ,2048 ,cl_amd_cpu,Ryzen_3900x,0.2707328796386719 ,0.18315792083740234
+5,pysb.examples.schloegl,beerus     ,101 ,100     ,4096 ,cl_amd_cpu,Ryzen_3900x,0.5264537334442139 ,0.3678162097930908
+6,pysb.examples.schloegl,beerus     ,101 ,100     ,8192 ,cl_amd_cpu,Ryzen_3900x,1.0278851985931396 ,0.7251243591308594
+7,pysb.examples.schloegl,beerus     ,101 ,100     ,16384,cl_amd_cpu,Ryzen_3900x,2.0482633113861084 ,1.4257278442382812
+8,pysb.examples.schloegl,beerus     ,101 ,100     ,32768,cl_amd_cpu,Ryzen_3900x,4.079011678695679  ,2.87197208404541
+9,pysb.examples.schloegl,beerus     ,101 ,100     ,65536,cl_amd_cpu,Ryzen_3900x,8.203561305999756  ,5.805497169494629

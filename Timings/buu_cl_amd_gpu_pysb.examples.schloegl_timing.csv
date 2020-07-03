@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator ,gpu_name  ,total_time         ,sim_time
+0,pysb.examples.schloegl,buu        ,101 ,100     ,128  ,cl_amd_gpu,Radeon Vii,0.6515505313873291 ,0.30478382110595703
+1,pysb.examples.schloegl,buu        ,101 ,100     ,256  ,cl_amd_gpu,Radeon Vii,0.13175249099731445,0.10168600082397461
+2,pysb.examples.schloegl,buu        ,101 ,100     ,512  ,cl_amd_gpu,Radeon Vii,0.14301085472106934,0.10217714309692383
+3,pysb.examples.schloegl,buu        ,101 ,100     ,1024 ,cl_amd_gpu,Radeon Vii,0.5830786228179932 ,0.5218217372894287
+4,pysb.examples.schloegl,buu        ,101 ,100     ,2048 ,cl_amd_gpu,Radeon Vii,0.952528715133667  ,0.8392462730407715
+5,pysb.examples.schloegl,buu        ,101 ,100     ,4096 ,cl_amd_gpu,Radeon Vii,0.8245937824249268 ,0.6223351955413818
+6,pysb.examples.schloegl,buu        ,101 ,100     ,8192 ,cl_amd_gpu,Radeon Vii,1.2314059734344482 ,0.8473467826843262
+7,pysb.examples.schloegl,buu        ,101 ,100     ,16384,cl_amd_gpu,Radeon Vii,1.681234359741211  ,0.9306120872497559
+8,pysb.examples.schloegl,buu        ,101 ,100     ,32768,cl_amd_gpu,Radeon Vii,2.8441874980926514 ,1.3332853317260742
+9,pysb.examples.schloegl,buu        ,101 ,100     ,65536,cl_amd_gpu,Radeon Vii,4.714629650115967  ,1.7168266773223877

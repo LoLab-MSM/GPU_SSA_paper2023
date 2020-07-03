@@ -1,0 +1,10 @@
+ ,device_name,end_time,gpu_name,model_name            ,n_sim,n_ts,sim_time            ,simulator   ,total_time
+0,pct        ,100     ,i5_6500T,pysb.examples.michment,256  ,101 ,0.01888561248779297 ,cl_intel_gpu,0.605604887008667
+1,pct        ,100     ,i5_6500T,pysb.examples.michment,512  ,101 ,0.014232635498046875,cl_intel_gpu,0.12117981910705566
+2,pct        ,100     ,i5_6500T,pysb.examples.michment,1024 ,101 ,0.020032882690429688,cl_intel_gpu,0.1948237419128418
+3,pct        ,100     ,i5_6500T,pysb.examples.michment,2048 ,101 ,0.05456662178039551 ,cl_intel_gpu,0.3484776020050049
+4,pct        ,100     ,i5_6500T,pysb.examples.michment,4096 ,101 ,0.10661053657531738 ,cl_intel_gpu,0.6330058574676514
+5,pct        ,100     ,i5_6500T,pysb.examples.michment,8192 ,101 ,0.15961670875549316 ,cl_intel_gpu,1.156928300857544
+6,pct        ,100     ,i5_6500T,pysb.examples.michment,16384,101 ,0.28875732421875    ,cl_intel_gpu,2.181579351425171
+7,pct        ,100     ,i5_6500T,pysb.examples.michment,32768,101 ,0.5584876537322998  ,cl_intel_gpu,4.323156356811523
+8,pct        ,100     ,i5_6500T,pysb.examples.michment,65536,101 ,1.0752291679382324  ,cl_intel_gpu,8.47014594078064

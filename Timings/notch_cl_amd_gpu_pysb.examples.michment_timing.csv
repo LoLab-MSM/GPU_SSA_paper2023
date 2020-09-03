@@ -1,0 +1,11 @@
+,model_name,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time,sim_time
+0,pysb.examples.michment,notch,101,100,128,cl_amd_gpu,Radeon Vii,1.0963664054870605,0.004218578338623047
+1,pysb.examples.michment,notch,101,100,256,cl_amd_gpu,Radeon Vii,0.06051063537597656,0.002689838409423828
+2,pysb.examples.michment,notch,101,100,512,cl_amd_gpu,Radeon Vii,0.09555506706237793,0.003489971160888672
+3,pysb.examples.michment,notch,101,100,1024,cl_amd_gpu,Radeon Vii,0.1640927791595459,0.005957126617431641
+4,pysb.examples.michment,notch,101,100,2048,cl_amd_gpu,Radeon Vii,0.22893166542053223,0.010343790054321289
+5,pysb.examples.michment,notch,101,100,4096,cl_amd_gpu,Radeon Vii,0.453563928604126,0.01651763916015625
+6,pysb.examples.michment,notch,101,100,8192,cl_amd_gpu,Radeon Vii,0.8095877170562744,0.029657840728759766
+7,pysb.examples.michment,notch,101,100,16384,cl_amd_gpu,Radeon Vii,1.636599063873291,0.06599044799804688
+8,pysb.examples.michment,notch,101,100,32768,cl_amd_gpu,Radeon Vii,3.3916327953338623,0.08713483810424805
+9,pysb.examples.michment,notch,101,100,65536,cl_amd_gpu,Radeon Vii,6.419322490692139,0.15024518966674805

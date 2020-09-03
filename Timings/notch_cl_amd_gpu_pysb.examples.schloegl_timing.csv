@@ -1,0 +1,11 @@
+,model_name,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time,sim_time
+0,pysb.examples.schloegl,notch,101,100,128,cl_amd_gpu,Radeon Vii,0.035347938537597656,0.011466741561889648
+1,pysb.examples.schloegl,notch,101,100,256,cl_amd_gpu,Radeon Vii,0.04867386817932129,0.02182149887084961
+2,pysb.examples.schloegl,notch,101,100,512,cl_amd_gpu,Radeon Vii,0.14725494384765625,0.10600805282592773
+3,pysb.examples.schloegl,notch,101,100,1024,cl_amd_gpu,Radeon Vii,0.1878516674041748,0.12378716468811035
+4,pysb.examples.schloegl,notch,101,100,2048,cl_amd_gpu,Radeon Vii,0.27250218391418457,0.16426301002502441
+5,pysb.examples.schloegl,notch,101,100,4096,cl_amd_gpu,Radeon Vii,0.534165620803833,0.33301353454589844
+6,pysb.examples.schloegl,notch,101,100,8192,cl_amd_gpu,Radeon Vii,1.0057036876678467,0.56960129737854
+7,pysb.examples.schloegl,notch,101,100,16384,cl_amd_gpu,Radeon Vii,1.798370122909546,0.9294476509094238
+8,pysb.examples.schloegl,notch,101,100,32768,cl_amd_gpu,Radeon Vii,3.4880664348602295,1.8372278213500977
+9,pysb.examples.schloegl,notch,101,100,65536,cl_amd_gpu,Radeon Vii,7.228997707366943,3.7962586879730225

@@ -1,0 +1,11 @@
+,model_name,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time,sim_time
+0,pysb.examples.kinase_cascade,rage,101,50,128,cuda,TeslaV100-SXM2-32GB,2.1646127700805664,2.0408027172088623
+1,pysb.examples.kinase_cascade,rage,101,50,256,cuda,TeslaV100-SXM2-32GB,2.180572748184204,2.044344425201416
+2,pysb.examples.kinase_cascade,rage,101,50,512,cuda,TeslaV100-SXM2-32GB,2.2055466175079346,2.0446674823760986
+3,pysb.examples.kinase_cascade,rage,101,50,1024,cuda,TeslaV100-SXM2-32GB,2.3068599700927734,2.0450685024261475
+4,pysb.examples.kinase_cascade,rage,101,50,2048,cuda,TeslaV100-SXM2-32GB,2.362881898880005,2.0454771518707275
+5,pysb.examples.kinase_cascade,rage,101,50,4096,cuda,TeslaV100-SXM2-32GB,2.577122449874878,2.0496885776519775
+6,pysb.examples.kinase_cascade,rage,101,50,8192,cuda,TeslaV100-SXM2-32GB,2.9889166355133057,2.0562119483947754
+7,pysb.examples.kinase_cascade,rage,101,50,16384,cuda,TeslaV100-SXM2-32GB,4.2899110317230225,2.4735686779022217
+8,pysb.examples.kinase_cascade,rage,101,50,32768,cuda,TeslaV100-SXM2-32GB,8.471346616744995,4.998935222625732
+9,pysb.examples.kinase_cascade,rage,101,50,65536,cuda,TeslaV100-SXM2-32GB,16.253364324569702,9.426513195037842

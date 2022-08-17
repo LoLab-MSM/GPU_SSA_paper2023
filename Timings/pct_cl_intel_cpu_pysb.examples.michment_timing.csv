@@ -1,9 +1,9 @@
- ,device_name,end_time,gpu_name,model_name            ,n_sim ,n_ts,sim_time           ,simulator,total_time
-0,pct        ,100     ,i5_6500T,pysb.examples.michment,1024  ,101 ,0.35043954849243164,cl_intel ,1.4307382106781006
-1,pct        ,100     ,i5_6500T,pysb.examples.michment,2048  ,101 ,0.4783763885498047 ,cl_intel ,0.7665069103240967
-2,pct        ,100     ,i5_6500T,pysb.examples.michment,4096  ,101 ,0.7444095611572266 ,cl_intel ,1.227238655090332
-3,pct        ,100     ,i5_6500T,pysb.examples.michment,8192  ,101 ,1.28330659866333   ,cl_intel ,2.2070558071136475
-4,pct        ,100     ,i5_6500T,pysb.examples.michment,16384 ,101 ,2.3605153560638428 ,cl_intel ,4.2139928340911865
-5,pct        ,100     ,i5_6500T,pysb.examples.michment,32768 ,101 ,3.2968428134918213 ,cl_intel ,6.929307460784912
-6,pct        ,100     ,i5_6500T,pysb.examples.michment,65536 ,101 ,5.6823015213012695 ,cl_intel ,13.0434250831604
-7,pct        ,100     ,i5_6500T,pysb.examples.michment,131072,101 ,10.169247388839722 ,cl_intel ,24.831291437149048
+ ,device_name,end_time,gpu_name,model_name            ,n_sim ,n_ts,sim_time           ,simulator   ,total_time
+0,pct        ,100     ,i5_6500T,pysb.examples.michment,1024  ,101 ,0.35043954849243164,cl_intel_cpu,1.4307382106781006
+1,pct        ,100     ,i5_6500T,pysb.examples.michment,2048  ,101 ,0.4783763885498047 ,cl_intel_cpu,0.7665069103240967
+2,pct        ,100     ,i5_6500T,pysb.examples.michment,4096  ,101 ,0.7444095611572266 ,cl_intel_cpu,1.227238655090332
+3,pct        ,100     ,i5_6500T,pysb.examples.michment,8192  ,101 ,1.28330659866333   ,cl_intel_cpu,2.2070558071136475
+4,pct        ,100     ,i5_6500T,pysb.examples.michment,16384 ,101 ,2.3605153560638428 ,cl_intel_cpu,4.2139928340911865
+5,pct        ,100     ,i5_6500T,pysb.examples.michment,32768 ,101 ,3.2968428134918213 ,cl_intel_cpu,6.929307460784912
+6,pct        ,100     ,i5_6500T,pysb.examples.michment,65536 ,101 ,5.6823015213012695 ,cl_intel_cpu,13.0434250831604
+7,pct        ,100     ,i5_6500T,pysb.examples.michment,131072,101 ,10.169247388839722 ,cl_intel_cpu,24.831291437149048

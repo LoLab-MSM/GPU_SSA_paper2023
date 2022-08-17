@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.schloegl,beerus     ,101 ,100     ,128  ,cuda     ,RTX3090 ,1.246999979019165 ,0.15649914741516113
+1,pysb.examples.schloegl,beerus     ,101 ,100     ,256  ,cuda     ,RTX3090 ,1.1766040325164795,0.07849955558776855
+2,pysb.examples.schloegl,beerus     ,101 ,100     ,512  ,cuda     ,RTX3090 ,1.3919999599456787,0.29799938201904297
+3,pysb.examples.schloegl,beerus     ,101 ,100     ,1024 ,cuda     ,RTX3090 ,1.6034996509552002,0.4830000400543213
+4,pysb.examples.schloegl,beerus     ,101 ,100     ,2048 ,cuda     ,RTX3090 ,1.8909997940063477,0.7229995727539062
+5,pysb.examples.schloegl,beerus     ,101 ,100     ,4096 ,cuda     ,RTX3090 ,2.0330002307891846,0.7439999580383301
+6,pysb.examples.schloegl,beerus     ,101 ,100     ,8192 ,cuda     ,RTX3090 ,2.2375271320343018,0.7674999237060547
+7,pysb.examples.schloegl,beerus     ,101 ,100     ,16384,cuda     ,RTX3090 ,2.863499641418457 ,1.019500732421875
+8,pysb.examples.schloegl,beerus     ,101 ,100     ,32768,cuda     ,RTX3090 ,4.050501585006714 ,1.3519999980926514
+9,pysb.examples.schloegl,beerus     ,101 ,100     ,65536,cuda     ,RTX3090 ,6.175590753555298 ,1.8634998798370361

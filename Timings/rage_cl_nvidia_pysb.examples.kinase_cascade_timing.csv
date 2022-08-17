@@ -1,2 +1,0 @@
-,model_name,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time,sim_time
-0,pysb.examples.kinase_cascade,rage,101,50,32768,cl_nvidia,TeslaV100-SXM2-32GB,6.634330749511719,3.0535995960235596

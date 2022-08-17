@@ -1,0 +1,11 @@
+ ,model_name                  ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,128  ,cl_nvidia,RTX3090 ,19.027902364730835,18.370187282562256
+1,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,256  ,cl_nvidia,RTX3090 ,18.77847123146057 ,18.3555006980896
+2,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,512  ,cl_nvidia,RTX3090 ,18.798949241638184,18.366000413894653
+3,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,1024 ,cl_nvidia,RTX3090 ,18.857499837875366,18.376500368118286
+4,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,2048 ,cl_nvidia,RTX3090 ,18.978999853134155,18.38800048828125
+5,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,4096 ,cl_nvidia,RTX3090 ,22.662277460098267,21.86549949645996
+6,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,8192 ,cl_nvidia,RTX3090 ,38.05909872055054 ,36.80899977684021
+7,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,16384,cl_nvidia,RTX3090 ,66.37968373298645 ,64.32603073120117
+8,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,32768,cl_nvidia,RTX3090 ,151.57695603370667,147.83100008964539
+9,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,65536,cl_nvidia,RTX3090 ,265.49318528175354,258.3979995250702

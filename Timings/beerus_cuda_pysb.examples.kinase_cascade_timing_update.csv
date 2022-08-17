@@ -1,0 +1,11 @@
+ ,model_name                  ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,128  ,cuda     ,RTX3090 ,32.11549997329712 ,30.94249987602234
+1,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,256  ,cuda     ,RTX3090 ,15.62650203704834 ,14.46899938583374
+2,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,512  ,cuda     ,RTX3090 ,15.694999933242798,14.473499298095703
+3,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,1024 ,cuda     ,RTX3090 ,15.812000513076782,14.48099970817566
+4,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,2048 ,cuda     ,RTX3090 ,16.06100034713745 ,14.487999439239502
+5,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,4096 ,cuda     ,RTX3090 ,19.80400037765503 ,17.73200011253357
+6,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,8192 ,cuda     ,RTX3090 ,34.00500130653381 ,31.02299976348877
+7,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,16384,cuda     ,RTX3090 ,59.10550045967102 ,54.20850229263306
+8,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,32768,cuda     ,RTX3090 ,132.9561367034912 ,124.2599983215332
+9,pysb.examples.kinase_cascade,beerus     ,101 ,100     ,65536,cuda     ,RTX3090 ,233.90063524246216,217.55300045013428

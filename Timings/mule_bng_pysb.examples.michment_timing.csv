@@ -1,12 +1,12 @@
-,device_name,end_time,gpu_name,model_name,n_sim,n_ts,sim_time,simulator,total_time
-0,mule,100,RTX2080,pysb.examples.michment,128,101,2.485671043395996,bng,2.485671043395996
-1,mule,100,RTX2080,pysb.examples.michment,256,101,4.757258892059326,bng,4.757258892059326
-2,mule,100,RTX2080,pysb.examples.michment,512,101,8.796685934066772,bng,8.796685934066772
-3,mule,100,RTX2080,pysb.examples.michment,1024,101,17.05739188194275,bng,17.05739188194275
-4,mule,100,RTX2080,pysb.examples.michment,2048,101,35.36169409751892,bng,35.36169409751892
-5,mule,100,RTX2080,pysb.examples.michment,4096,101,68.31721615791321,bng,68.31721615791321
-6,mule,100,RTX2080,pysb.examples.michment,8192,101,152.14658999443054,bng,152.14658999443054
-7,mule,100,RTX2080,pysb.examples.michment,16384,101,344.4767391681671,bng,344.4767391681671
-8,mule,100,RTX2080,pysb.examples.michment,32768,101,818.9839599132538,bng,818.9839599132538
-9,mule,100,RTX2080,pysb.examples.michment,65536,101,2136.5133090019226,bng,2136.5133090019226
-10,mule,100,RTX2080,pysb.examples.michment,131072,101,6232.519555091858,bng,6232.519555091858
+  ,device_name,end_time,gpu_name,model_name            ,n_sim ,n_ts,sim_time          ,simulator,total_time
+0 ,mule       ,100     ,        ,pysb.examples.michment,128   ,101 ,2.485671043395996 ,bng      ,2.485671043395996
+1 ,mule       ,100     ,        ,pysb.examples.michment,256   ,101 ,4.757258892059326 ,bng      ,4.757258892059326
+2 ,mule       ,100     ,        ,pysb.examples.michment,512   ,101 ,8.796685934066772 ,bng      ,8.796685934066772
+3 ,mule       ,100     ,        ,pysb.examples.michment,1024  ,101 ,17.05739188194275 ,bng      ,17.05739188194275
+4 ,mule       ,100     ,        ,pysb.examples.michment,2048  ,101 ,35.36169409751892 ,bng      ,35.36169409751892
+5 ,mule       ,100     ,        ,pysb.examples.michment,4096  ,101 ,68.31721615791321 ,bng      ,68.31721615791321
+6 ,mule       ,100     ,        ,pysb.examples.michment,8192  ,101 ,152.14658999443054,bng      ,152.14658999443054
+7 ,mule       ,100     ,        ,pysb.examples.michment,16384 ,101 ,344.4767391681671 ,bng      ,344.4767391681671
+8 ,mule       ,100     ,        ,pysb.examples.michment,32768 ,101 ,818.9839599132538 ,bng      ,818.9839599132538
+9 ,mule       ,100     ,        ,pysb.examples.michment,65536 ,101 ,2136.5133090019226,bng      ,2136.5133090019226
+10,mule       ,100     ,        ,pysb.examples.michment,131072,101 ,6232.519555091858 ,bng      ,6232.519555091858

@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,128  ,cl_nvidia,RTX3090 ,606.2146463394165 ,605.173501253128
+1,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,256  ,cl_nvidia,RTX3090 ,614.229124546051  ,613.6409890651703
+2,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,512  ,cl_nvidia,RTX3090 ,619.2894997596741 ,618.6789999008179
+3,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,1024 ,cl_nvidia,RTX3090 ,613.5074999332428 ,612.7569999694824
+4,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,2048 ,cl_nvidia,RTX3090 ,616.0968446731567 ,615.0916986465454
+5,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,4096 ,cl_nvidia,RTX3090 ,722.1325166225433 ,720.610499382019
+6,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,8192 ,cl_nvidia,RTX3090 ,1133.706048965454 ,1131.101499080658
+7,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,16384,cl_nvidia,RTX3090 ,2217.721313238144 ,2213.0329117774963
+8,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,32768,cl_nvidia,RTX3090 ,3650.2605016231537,3641.3644993305206
+9,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,65536,cl_nvidia,RTX3090 ,7246.496912956238 ,7228.855113267899

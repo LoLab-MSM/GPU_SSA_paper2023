@@ -46,7 +46,7 @@ def write(row_dict):
     row_dict: dict
 
     """
-    f_name = r'Timings/times.csv'
+    f_name = r'Timings/times2.csv'
     fields = []
     values = []
     for key in sorted(row_dict):

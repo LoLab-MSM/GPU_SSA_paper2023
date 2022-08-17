@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time         ,sim_time
+0,pysb.examples.schloegl,beerus     ,101 ,100     ,128  ,cl_nvidia,RTX3090 ,0.42999982833862305,0.15800046920776367
+1,pysb.examples.schloegl,beerus     ,101 ,100     ,256  ,cl_nvidia,RTX3090 ,1.2880001068115234 ,1.0185015201568604
+2,pysb.examples.schloegl,beerus     ,101 ,100     ,512  ,cl_nvidia,RTX3090 ,0.3939354419708252 ,0.14299917221069336
+3,pysb.examples.schloegl,beerus     ,101 ,100     ,1024 ,cl_nvidia,RTX3090 ,1.309370994567871  ,1.0444996356964111
+4,pysb.examples.schloegl,beerus     ,101 ,100     ,2048 ,cl_nvidia,RTX3090 ,1.276761531829834  ,0.9709999561309814
+5,pysb.examples.schloegl,beerus     ,101 ,100     ,4096 ,cl_nvidia,RTX3090 ,1.510711669921875  ,1.1364989280700684
+6,pysb.examples.schloegl,beerus     ,101 ,100     ,8192 ,cl_nvidia,RTX3090 ,1.8894996643066406 ,1.3704984188079834
+7,pysb.examples.schloegl,beerus     ,101 ,100     ,16384,cl_nvidia,RTX3090 ,2.3731486797332764 ,1.5314981937408447
+8,pysb.examples.schloegl,beerus     ,101 ,100     ,32768,cl_nvidia,RTX3090 ,3.41499924659729   ,2.0029988288879395
+9,pysb.examples.schloegl,beerus     ,101 ,100     ,65536,cl_nvidia,RTX3090 ,5.7754998207092285 ,3.2024996280670166

@@ -1,0 +1,11 @@
+ ,model_name            ,device_name,n_ts,end_time,n_sim,simulator,gpu_name,total_time        ,sim_time
+0,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,128  ,cuda     ,RTX3090 ,983.9713366031647 ,981.4340116977692
+1,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,256  ,cuda     ,RTX3090 ,511.82800126075745,510.3169963359833
+2,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,512  ,cuda     ,RTX3090 ,521.5747497081757 ,519.9390001296997
+3,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,1024 ,cuda     ,RTX3090 ,538.8545165061951 ,536.8999953269958
+4,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,2048 ,cuda     ,RTX3090 ,558.5879971981049 ,556.0199942588806
+5,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,4096 ,cuda     ,RTX3090 ,685.3090028762817 ,681.4740006923676
+6,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,8192 ,cuda     ,RTX3090 ,1060.7399966716766,1054.37699842453
+7,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,16384,cuda     ,RTX3090 ,2061.2300050258636,2049.9169948101044
+8,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,32768,cuda     ,RTX3090 ,3484.6549508571625,3463.2306821346283
+9,pysb.examples.earm_1_0,beerus     ,101 ,20000   ,65536,cuda     ,RTX3090 ,6812.262846708298 ,6768.804999828339

@@ -1,0 +1,11 @@
+,model_name,device_name,n_ts,end_time,opencl_args,n_sim,simulator,gpu_name,precision,total_time,sim_time
+0,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",128,cl_nvidia,TeslaV100-SXM2-32GB,fp64,224.55152344703674,224.46244359016418
+1,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",256,cl_nvidia,TeslaV100-SXM2-32GB,fp64,214.67360043525696,214.55547165870667
+2,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",512,cl_nvidia,TeslaV100-SXM2-32GB,fp64,228.04416799545288,227.86537384986877
+3,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",1024,cl_nvidia,TeslaV100-SXM2-32GB,fp64,231.68446350097656,231.38663864135742
+4,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",2048,cl_nvidia,TeslaV100-SXM2-32GB,fp64,238.94174098968506,238.40564966201782
+5,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",4096,cl_nvidia,TeslaV100-SXM2-32GB,fp64,233.2726767063141,232.23285555839539
+6,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",8192,cl_nvidia,TeslaV100-SXM2-32GB,fp64,240.78117680549622,238.8705370426178
+7,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",16384,cl_nvidia,TeslaV100-SXM2-32GB,fp64,285.2515935897827,281.3916554450989
+8,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",32768,cl_nvidia,TeslaV100-SXM2-32GB,fp64,351.8426322937012,344.1670038700104
+9,pysb.examples.earm_1_0,rage,101,20000,"0:0,1,2,3",65536,cl_nvidia,TeslaV100-SXM2-32GB,fp64,1055.8026010990143,1040.5116031169891

@@ -129,12 +129,13 @@ def load_data(rage=False):
 
     df['sim_card'] = df['gpu_name'] + '_' + df['simulator']
     df.sim_time = df.sim_time.astype('float')
-    df.loc[df.model_name == 'michment', 'model_name'] = 'Michaelis Menten'
+    df.loc[df.model_name == 'michment', 'model_name'] = 'Michaelis-Menten'
     df.loc[df.model_name == 'earm_1_0', 'model_name'] = 'EARM 1.0'
     df.loc[
-        df.model_name == 'kinase_cascade', 'model_name'] = 'JNK Activation Cascade'
+        df.model_name == 'kinase_cascade', 'model_name'] = 'Kinase Cascade'
     df.loc[df.model_name == 'schlogl', 'model_name'] = 'Schlögl'
     df.loc[df.model_name == 'schloegl', 'model_name'] = 'Schlögl'
+    # model_names = ['Michaelis-Menten', 'Schlögl', 'Kinase Cascade', 'EARM 1.0']
     return df
 
 

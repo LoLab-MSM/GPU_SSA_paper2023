@@ -1,0 +1,11 @@
+,model_name,device_name,n_ts,end_time,opencl_args,n_sim,simulator,gpu_name,precision,total_time,sim_time
+0,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",128,cl_nvidia,TeslaV100-SXM2-32GB,fp64,6.638587951660156,6.603633880615234
+1,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",256,cl_nvidia,TeslaV100-SXM2-32GB,fp64,6.670250654220581,6.6229352951049805
+2,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",512,cl_nvidia,TeslaV100-SXM2-32GB,fp64,6.698481559753418,6.628084421157837
+3,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",1024,cl_nvidia,TeslaV100-SXM2-32GB,fp64,6.754560470581055,6.636847972869873
+4,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",2048,cl_nvidia,TeslaV100-SXM2-32GB,fp64,6.869748830795288,6.6559553146362305
+5,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",4096,cl_nvidia,TeslaV100-SXM2-32GB,fp64,7.086047887802124,6.682860374450684
+6,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",8192,cl_nvidia,TeslaV100-SXM2-32GB,fp64,7.547453880310059,6.754873514175415
+7,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",16384,cl_nvidia,TeslaV100-SXM2-32GB,fp64,8.544407367706299,6.896497011184692
+8,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",32768,cl_nvidia,TeslaV100-SXM2-32GB,fp64,11.533615112304688,8.301706790924072
+9,pysb.examples.kinase_cascade,rage,101,100,"0:0,1",65536,cl_nvidia,TeslaV100-SXM2-32GB,fp64,23.236926555633545,16.72707176208496
